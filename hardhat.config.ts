@@ -280,6 +280,7 @@ const config: HardhatUserConfig = {
       "zkevm-mainnet": process.env.ZKEVM_EXPLORER_API_KEY || "",
       "billions-test": "test",
       "billions-main": "main",
+      "base": process.env.BASE_EXPLORER_API_KEY || "",
     },
     customChains: [
       {
