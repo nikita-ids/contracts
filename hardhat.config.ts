@@ -40,6 +40,9 @@ const config: HardhatUserConfig = {
     compilers: [
       {
         version: "0.8.27",
+        settings: {
+          evmVersion: "berlin",
+        },
       },
     ],
     overrides: {
@@ -198,6 +201,11 @@ const config: HardhatUserConfig = {
       url: `${process.env.LINEA_SEPOLIA_RPC_URL}`,
       // accounts: process.env.PRIVATE_KEY ? [`0x${process.env.PRIVATE_KEY}`] : DEFAULT_ACCOUNTS,
       ledgerAccounts: [`${process.env.LEDGER_ACCOUNT}`],
+    },
+    "bbn-mainnet": {
+      url: process.env.BBN_MAINNET_RPC_URL,
+      chainId: 8099,
+      accounts: process.env.PRIVATE_KEY !== undefined ? [`0x${process.env.PRIVATE_KEY}`] : [],
     },
     // hardhat: {
     //   chainId: 80002,

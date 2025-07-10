@@ -137,7 +137,7 @@ async function deployPoseidonBasic(nInputs: number) {
   const bytecode = poseidonContract.createCode(nInputs);
 
   const Poseidon = await ethers.getContractFactory(abi, bytecode);
-  const poseidon = await Poseidon.deploy();
+  const poseidon = await Poseidon.deploy({ gasLimit: 6000000 });
   await poseidon.waitForDeployment();
   Logger.success(`Poseidon${nInputs}Element deployed to: ${await poseidon.getAddress()}`);
   return poseidon;

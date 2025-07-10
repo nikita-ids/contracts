@@ -397,6 +397,7 @@ export class DeployHelper {
           PoseidonUnit2L: poseidon2Address,
           PoseidonUnit3L: poseidon3Address,
         },
+        gasLimit: 6000000,
       });
     }
 
