@@ -65,6 +65,11 @@
       "address": "0xcC3d1e4162c215913EcfECaaB3a488dE919b000c",
       "txHash": "0x0e5dc8ecde44aa6f6f29f92dc6ffdc4a9707015b95e54dcecd03804c9f6165ec",
       "kind": "transparent"
+    },
+    {
+      "address": "0x823592cBa4fC40C6Fe0110A1A20602e7e008CcCA",
+      "txHash": "0x2e5d1099bd37f4e1e1d5307b36b5e12d1dc9564dd4e362e3d2443d0ae81a16bf",
+      "kind": "transparent"
     }
   ],
   "impls": {
@@ -2301,6 +2306,4630 @@
               "label": "_initializing",
               "type": "t_bool",
               "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:73",
+              "offset": 8,
+              "slot": "0"
+            }
+          ]
+        }
+      }
+    },
+    "8998d18b3ee350f549eba727eaaf54472e772d5ef3edeeb9963e8ea1333fdd8a": {
+      "address": "0x144d55fB49b71bBF687E5f7BF0CD63FF46b4D3e6",
+      "txHash": "0xfca87da888a4b8eab306d142f7755b5b5b754a0b4a5079ad7e9dc5c0d0144531",
+      "layout": {
+        "solcVersion": "0.8.27",
+        "storage": [],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_string_storage)dyn_storage": {
+            "label": "string[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_struct(ProofEntry)2064_storage)dyn_storage": {
+            "label": "struct Verifier.ProofEntry[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_uint256)45_storage": {
+            "label": "uint256[45]",
+            "numberOfBytes": "1440"
+          },
+          "t_array(t_uint256)dyn_storage": {
+            "label": "uint256[]",
+            "numberOfBytes": "32"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_bytes_storage": {
+            "label": "bytes",
+            "numberOfBytes": "32"
+          },
+          "t_contract(IAuthValidator)271": {
+            "label": "contract IAuthValidator",
+            "numberOfBytes": "20"
+          },
+          "t_contract(IRequestValidator)334": {
+            "label": "contract IRequestValidator",
+            "numberOfBytes": "20"
+          },
+          "t_contract(IState)583": {
+            "label": "contract IState",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_address,t_struct(Proof)2044_storage)": {
+            "label": "mapping(address => struct Verifier.Proof)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_contract(IRequestValidator)334,t_bool)": {
+            "label": "mapping(contract IRequestValidator => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_string_memory_ptr,t_struct(AuthMethodData)1976_storage)": {
+            "label": "mapping(string => struct Verifier.AuthMethodData)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_string_memory_ptr,t_uint256)": {
+            "label": "mapping(string => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_address)": {
+            "label": "mapping(uint256 => address)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_array(t_uint256)dyn_storage)": {
+            "label": "mapping(uint256 => uint256[])",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_bool)": {
+            "label": "mapping(uint256 => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_mapping(t_address,t_struct(Proof)2044_storage))": {
+            "label": "mapping(uint256 => mapping(address => struct Verifier.Proof))",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_struct(MultiRequest)672_storage)": {
+            "label": "mapping(uint256 => struct IVerifier.MultiRequest)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_struct(RequestData)614_storage)": {
+            "label": "mapping(uint256 => struct IVerifier.RequestData)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_uint256)": {
+            "label": "mapping(uint256 => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_string_memory_ptr": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_struct(AuthMethodData)1976_storage": {
+            "label": "struct Verifier.AuthMethodData",
+            "members": [
+              {
+                "label": "validator",
+                "type": "t_contract(IAuthValidator)271",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "params",
+                "type": "t_bytes_storage",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "isActive",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "2"
+              }
+            ],
+            "numberOfBytes": "96"
+          },
+          "t_struct(InitializableStorage)146_storage": {
+            "label": "struct Initializable.InitializableStorage",
+            "members": [
+              {
+                "label": "_initialized",
+                "type": "t_uint64",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "_initializing",
+                "type": "t_bool",
+                "offset": 8,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(MultiRequest)672_storage": {
+            "label": "struct IVerifier.MultiRequest",
+            "members": [
+              {
+                "label": "multiRequestId",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "requestIds",
+                "type": "t_array(t_uint256)dyn_storage",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "groupIds",
+                "type": "t_array(t_uint256)dyn_storage",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "metadata",
+                "type": "t_bytes_storage",
+                "offset": 0,
+                "slot": "3"
+              }
+            ],
+            "numberOfBytes": "128"
+          },
+          "t_struct(Ownable2StepStorage)14_storage": {
+            "label": "struct Ownable2StepUpgradeable.Ownable2StepStorage",
+            "members": [
+              {
+                "label": "_pendingOwner",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(OwnableStorage)74_storage": {
+            "label": "struct OwnableUpgradeable.OwnableStorage",
+            "members": [
+              {
+                "label": "_owner",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(Proof)2044_storage": {
+            "label": "struct Verifier.Proof",
+            "members": [
+              {
+                "label": "isVerified",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "proofEntries",
+                "type": "t_array(t_struct(ProofEntry)2064_storage)dyn_storage",
+                "offset": 0,
+                "slot": "1"
+              }
+            ],
+            "numberOfBytes": "64"
+          },
+          "t_struct(ProofEntry)2064_storage": {
+            "label": "struct Verifier.ProofEntry",
+            "members": [
+              {
+                "label": "responseFields",
+                "type": "t_mapping(t_string_memory_ptr,t_uint256)",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "responseFieldNames",
+                "type": "t_array(t_string_storage)dyn_storage",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "responseFieldIndexes",
+                "type": "t_mapping(t_string_memory_ptr,t_uint256)",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "validatorVersion",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "blockTimestamp",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "__gap",
+                "type": "t_array(t_uint256)45_storage",
+                "offset": 0,
+                "slot": "5"
+              }
+            ],
+            "numberOfBytes": "1600"
+          },
+          "t_struct(RequestData)614_storage": {
+            "label": "struct IVerifier.RequestData",
+            "members": [
+              {
+                "label": "metadata",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "validator",
+                "type": "t_contract(IRequestValidator)334",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "params",
+                "type": "t_bytes_storage",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "creator",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "3"
+              }
+            ],
+            "numberOfBytes": "128"
+          },
+          "t_struct(RequestDisableStorage)1514_storage": {
+            "label": "struct RequestDisableable.RequestDisableStorage",
+            "members": [
+              {
+                "label": "_requestDisabling",
+                "type": "t_mapping(t_uint256,t_bool)",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(RequestOwnershipStorage)1571_storage": {
+            "label": "struct RequestOwnership.RequestOwnershipStorage",
+            "members": [
+              {
+                "label": "_requestOwners",
+                "type": "t_mapping(t_uint256,t_address)",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(ValidatorWhitelistStorage)1829_storage": {
+            "label": "struct ValidatorWhitelist.ValidatorWhitelistStorage",
+            "members": [
+              {
+                "label": "_validatorWhitelist",
+                "type": "t_mapping(t_contract(IRequestValidator)334,t_bool)",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(VerifierStorage)2033_storage": {
+            "label": "struct Verifier.VerifierStorage",
+            "members": [
+              {
+                "label": "_proofs",
+                "type": "t_mapping(t_uint256,t_mapping(t_address,t_struct(Proof)2044_storage))",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "_requests",
+                "type": "t_mapping(t_uint256,t_struct(RequestData)614_storage)",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "_requestIds",
+                "type": "t_array(t_uint256)dyn_storage",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "_state",
+                "type": "t_contract(IState)583",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "_groupedRequests",
+                "type": "t_mapping(t_uint256,t_array(t_uint256)dyn_storage)",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "_groupIds",
+                "type": "t_array(t_uint256)dyn_storage",
+                "offset": 0,
+                "slot": "5"
+              },
+              {
+                "label": "_multiRequests",
+                "type": "t_mapping(t_uint256,t_struct(MultiRequest)672_storage)",
+                "offset": 0,
+                "slot": "6"
+              },
+              {
+                "label": "_multiRequestIds",
+                "type": "t_array(t_uint256)dyn_storage",
+                "offset": 0,
+                "slot": "7"
+              },
+              {
+                "label": "_authMethodsNames",
+                "type": "t_array(t_string_storage)dyn_storage",
+                "offset": 0,
+                "slot": "8"
+              },
+              {
+                "label": "_authMethods",
+                "type": "t_mapping(t_string_memory_ptr,t_struct(AuthMethodData)1976_storage)",
+                "offset": 0,
+                "slot": "9"
+              },
+              {
+                "label": "_nullifierSessionIDs",
+                "type": "t_mapping(t_uint256,t_uint256)",
+                "offset": 0,
+                "slot": "10"
+              },
+              {
+                "label": "_verifierID",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "11"
+              }
+            ],
+            "numberOfBytes": "384"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint64": {
+            "label": "uint64",
+            "numberOfBytes": "8"
+          }
+        },
+        "namespaces": {
+          "erc7201:iden3.storage.ValidatorWhitelist": [
+            {
+              "contract": "ValidatorWhitelist",
+              "label": "_validatorWhitelist",
+              "type": "t_mapping(t_contract(IRequestValidator)334,t_bool)",
+              "src": "contracts\\verifiers\\ValidatorWhitelist.sol:15",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:iden3.storage.RequestDisableable": [
+            {
+              "contract": "RequestDisableable",
+              "label": "_requestDisabling",
+              "type": "t_mapping(t_uint256,t_bool)",
+              "src": "contracts\\verifiers\\RequestDisableable.sol:12",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:iden3.storage.RequestOwnership": [
+            {
+              "contract": "RequestOwnership",
+              "label": "_requestOwners",
+              "type": "t_mapping(t_uint256,t_address)",
+              "src": "contracts\\verifiers\\RequestOwnership.sol:10",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:iden3.storage.Verifier": [
+            {
+              "contract": "Verifier",
+              "label": "_proofs",
+              "type": "t_mapping(t_uint256,t_mapping(t_address,t_struct(Proof)2044_storage))",
+              "src": "contracts\\verifiers\\Verifier.sol:67",
+              "offset": 0,
+              "slot": "0"
+            },
+            {
+              "contract": "Verifier",
+              "label": "_requests",
+              "type": "t_mapping(t_uint256,t_struct(RequestData)614_storage)",
+              "src": "contracts\\verifiers\\Verifier.sol:68",
+              "offset": 0,
+              "slot": "1"
+            },
+            {
+              "contract": "Verifier",
+              "label": "_requestIds",
+              "type": "t_array(t_uint256)dyn_storage",
+              "src": "contracts\\verifiers\\Verifier.sol:69",
+              "offset": 0,
+              "slot": "2"
+            },
+            {
+              "contract": "Verifier",
+              "label": "_state",
+              "type": "t_contract(IState)583",
+              "src": "contracts\\verifiers\\Verifier.sol:70",
+              "offset": 0,
+              "slot": "3"
+            },
+            {
+              "contract": "Verifier",
+              "label": "_groupedRequests",
+              "type": "t_mapping(t_uint256,t_array(t_uint256)dyn_storage)",
+              "src": "contracts\\verifiers\\Verifier.sol:71",
+              "offset": 0,
+              "slot": "4"
+            },
+            {
+              "contract": "Verifier",
+              "label": "_groupIds",
+              "type": "t_array(t_uint256)dyn_storage",
+              "src": "contracts\\verifiers\\Verifier.sol:72",
+              "offset": 0,
+              "slot": "5"
+            },
+            {
+              "contract": "Verifier",
+              "label": "_multiRequests",
+              "type": "t_mapping(t_uint256,t_struct(MultiRequest)672_storage)",
+              "src": "contracts\\verifiers\\Verifier.sol:74",
+              "offset": 0,
+              "slot": "6"
+            },
+            {
+              "contract": "Verifier",
+              "label": "_multiRequestIds",
+              "type": "t_array(t_uint256)dyn_storage",
+              "src": "contracts\\verifiers\\Verifier.sol:75",
+              "offset": 0,
+              "slot": "7"
+            },
+            {
+              "contract": "Verifier",
+              "label": "_authMethodsNames",
+              "type": "t_array(t_string_storage)dyn_storage",
+              "src": "contracts\\verifiers\\Verifier.sol:77",
+              "offset": 0,
+              "slot": "8"
+            },
+            {
+              "contract": "Verifier",
+              "label": "_authMethods",
+              "type": "t_mapping(t_string_memory_ptr,t_struct(AuthMethodData)1976_storage)",
+              "src": "contracts\\verifiers\\Verifier.sol:78",
+              "offset": 0,
+              "slot": "9"
+            },
+            {
+              "contract": "Verifier",
+              "label": "_nullifierSessionIDs",
+              "type": "t_mapping(t_uint256,t_uint256)",
+              "src": "contracts\\verifiers\\Verifier.sol:79",
+              "offset": 0,
+              "slot": "10"
+            },
+            {
+              "contract": "Verifier",
+              "label": "_verifierID",
+              "type": "t_uint256",
+              "src": "contracts\\verifiers\\Verifier.sol:81",
+              "offset": 0,
+              "slot": "11"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Ownable2Step": [
+            {
+              "contract": "Ownable2StepUpgradeable",
+              "label": "_pendingOwner",
+              "type": "t_address",
+              "src": "@openzeppelin\\contracts-upgradeable\\access\\Ownable2StepUpgradeable.sol:29",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Ownable": [
+            {
+              "contract": "OwnableUpgradeable",
+              "label": "_owner",
+              "type": "t_address",
+              "src": "@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:24",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Initializable": [
+            {
+              "contract": "Initializable",
+              "label": "_initialized",
+              "type": "t_uint64",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:69",
+              "offset": 0,
+              "slot": "0"
+            },
+            {
+              "contract": "Initializable",
+              "label": "_initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:73",
+              "offset": 8,
+              "slot": "0"
+            }
+          ]
+        }
+      }
+    },
+    "a1b9d6b24c5d820e5c947abae4a9842dca0dd2faa317b4275f50c425a6966a0d": {
+      "address": "0xF17836da330A46C3Ddb36B73106C71A630F48915",
+      "txHash": "0xca310aa9dded0e3d892938efc2cfb24e377656e8422ab54ce05324c9042d1cdf",
+      "layout": {
+        "solcVersion": "0.8.27",
+        "storage": [],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_string_storage)dyn_storage": {
+            "label": "string[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_struct(ProofEntry)2064_storage)dyn_storage": {
+            "label": "struct Verifier.ProofEntry[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_uint256)45_storage": {
+            "label": "uint256[45]",
+            "numberOfBytes": "1440"
+          },
+          "t_array(t_uint256)dyn_storage": {
+            "label": "uint256[]",
+            "numberOfBytes": "32"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_bytes_storage": {
+            "label": "bytes",
+            "numberOfBytes": "32"
+          },
+          "t_contract(IAuthValidator)271": {
+            "label": "contract IAuthValidator",
+            "numberOfBytes": "20"
+          },
+          "t_contract(IRequestValidator)334": {
+            "label": "contract IRequestValidator",
+            "numberOfBytes": "20"
+          },
+          "t_contract(IState)583": {
+            "label": "contract IState",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_address,t_struct(Proof)2044_storage)": {
+            "label": "mapping(address => struct Verifier.Proof)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_contract(IRequestValidator)334,t_bool)": {
+            "label": "mapping(contract IRequestValidator => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_string_memory_ptr,t_struct(AuthMethodData)1976_storage)": {
+            "label": "mapping(string => struct Verifier.AuthMethodData)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_string_memory_ptr,t_uint256)": {
+            "label": "mapping(string => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_address)": {
+            "label": "mapping(uint256 => address)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_array(t_uint256)dyn_storage)": {
+            "label": "mapping(uint256 => uint256[])",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_bool)": {
+            "label": "mapping(uint256 => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_mapping(t_address,t_struct(Proof)2044_storage))": {
+            "label": "mapping(uint256 => mapping(address => struct Verifier.Proof))",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_struct(MultiRequest)672_storage)": {
+            "label": "mapping(uint256 => struct IVerifier.MultiRequest)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_struct(RequestData)614_storage)": {
+            "label": "mapping(uint256 => struct IVerifier.RequestData)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_uint256)": {
+            "label": "mapping(uint256 => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_string_memory_ptr": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_struct(AuthMethodData)1976_storage": {
+            "label": "struct Verifier.AuthMethodData",
+            "members": [
+              {
+                "label": "validator",
+                "type": "t_contract(IAuthValidator)271",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "params",
+                "type": "t_bytes_storage",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "isActive",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "2"
+              }
+            ],
+            "numberOfBytes": "96"
+          },
+          "t_struct(InitializableStorage)146_storage": {
+            "label": "struct Initializable.InitializableStorage",
+            "members": [
+              {
+                "label": "_initialized",
+                "type": "t_uint64",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "_initializing",
+                "type": "t_bool",
+                "offset": 8,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(MultiRequest)672_storage": {
+            "label": "struct IVerifier.MultiRequest",
+            "members": [
+              {
+                "label": "multiRequestId",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "requestIds",
+                "type": "t_array(t_uint256)dyn_storage",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "groupIds",
+                "type": "t_array(t_uint256)dyn_storage",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "metadata",
+                "type": "t_bytes_storage",
+                "offset": 0,
+                "slot": "3"
+              }
+            ],
+            "numberOfBytes": "128"
+          },
+          "t_struct(Ownable2StepStorage)14_storage": {
+            "label": "struct Ownable2StepUpgradeable.Ownable2StepStorage",
+            "members": [
+              {
+                "label": "_pendingOwner",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(OwnableStorage)74_storage": {
+            "label": "struct OwnableUpgradeable.OwnableStorage",
+            "members": [
+              {
+                "label": "_owner",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(Proof)2044_storage": {
+            "label": "struct Verifier.Proof",
+            "members": [
+              {
+                "label": "isVerified",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "proofEntries",
+                "type": "t_array(t_struct(ProofEntry)2064_storage)dyn_storage",
+                "offset": 0,
+                "slot": "1"
+              }
+            ],
+            "numberOfBytes": "64"
+          },
+          "t_struct(ProofEntry)2064_storage": {
+            "label": "struct Verifier.ProofEntry",
+            "members": [
+              {
+                "label": "responseFields",
+                "type": "t_mapping(t_string_memory_ptr,t_uint256)",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "responseFieldNames",
+                "type": "t_array(t_string_storage)dyn_storage",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "responseFieldIndexes",
+                "type": "t_mapping(t_string_memory_ptr,t_uint256)",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "validatorVersion",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "blockTimestamp",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "__gap",
+                "type": "t_array(t_uint256)45_storage",
+                "offset": 0,
+                "slot": "5"
+              }
+            ],
+            "numberOfBytes": "1600"
+          },
+          "t_struct(RequestData)614_storage": {
+            "label": "struct IVerifier.RequestData",
+            "members": [
+              {
+                "label": "metadata",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "validator",
+                "type": "t_contract(IRequestValidator)334",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "params",
+                "type": "t_bytes_storage",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "creator",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "3"
+              }
+            ],
+            "numberOfBytes": "128"
+          },
+          "t_struct(RequestDisableStorage)1514_storage": {
+            "label": "struct RequestDisableable.RequestDisableStorage",
+            "members": [
+              {
+                "label": "_requestDisabling",
+                "type": "t_mapping(t_uint256,t_bool)",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(RequestOwnershipStorage)1571_storage": {
+            "label": "struct RequestOwnership.RequestOwnershipStorage",
+            "members": [
+              {
+                "label": "_requestOwners",
+                "type": "t_mapping(t_uint256,t_address)",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(ValidatorWhitelistStorage)1829_storage": {
+            "label": "struct ValidatorWhitelist.ValidatorWhitelistStorage",
+            "members": [
+              {
+                "label": "_validatorWhitelist",
+                "type": "t_mapping(t_contract(IRequestValidator)334,t_bool)",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(VerifierStorage)2033_storage": {
+            "label": "struct Verifier.VerifierStorage",
+            "members": [
+              {
+                "label": "_proofs",
+                "type": "t_mapping(t_uint256,t_mapping(t_address,t_struct(Proof)2044_storage))",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "_requests",
+                "type": "t_mapping(t_uint256,t_struct(RequestData)614_storage)",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "_requestIds",
+                "type": "t_array(t_uint256)dyn_storage",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "_state",
+                "type": "t_contract(IState)583",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "_groupedRequests",
+                "type": "t_mapping(t_uint256,t_array(t_uint256)dyn_storage)",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "_groupIds",
+                "type": "t_array(t_uint256)dyn_storage",
+                "offset": 0,
+                "slot": "5"
+              },
+              {
+                "label": "_multiRequests",
+                "type": "t_mapping(t_uint256,t_struct(MultiRequest)672_storage)",
+                "offset": 0,
+                "slot": "6"
+              },
+              {
+                "label": "_multiRequestIds",
+                "type": "t_array(t_uint256)dyn_storage",
+                "offset": 0,
+                "slot": "7"
+              },
+              {
+                "label": "_authMethodsNames",
+                "type": "t_array(t_string_storage)dyn_storage",
+                "offset": 0,
+                "slot": "8"
+              },
+              {
+                "label": "_authMethods",
+                "type": "t_mapping(t_string_memory_ptr,t_struct(AuthMethodData)1976_storage)",
+                "offset": 0,
+                "slot": "9"
+              },
+              {
+                "label": "_nullifierSessionIDs",
+                "type": "t_mapping(t_uint256,t_uint256)",
+                "offset": 0,
+                "slot": "10"
+              },
+              {
+                "label": "_verifierID",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "11"
+              }
+            ],
+            "numberOfBytes": "384"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint64": {
+            "label": "uint64",
+            "numberOfBytes": "8"
+          }
+        },
+        "namespaces": {
+          "erc7201:iden3.storage.ValidatorWhitelist": [
+            {
+              "contract": "ValidatorWhitelist",
+              "label": "_validatorWhitelist",
+              "type": "t_mapping(t_contract(IRequestValidator)334,t_bool)",
+              "src": "contracts\\verifiers\\ValidatorWhitelist.sol:15",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:iden3.storage.RequestDisableable": [
+            {
+              "contract": "RequestDisableable",
+              "label": "_requestDisabling",
+              "type": "t_mapping(t_uint256,t_bool)",
+              "src": "contracts\\verifiers\\RequestDisableable.sol:12",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:iden3.storage.RequestOwnership": [
+            {
+              "contract": "RequestOwnership",
+              "label": "_requestOwners",
+              "type": "t_mapping(t_uint256,t_address)",
+              "src": "contracts\\verifiers\\RequestOwnership.sol:10",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:iden3.storage.Verifier": [
+            {
+              "contract": "Verifier",
+              "label": "_proofs",
+              "type": "t_mapping(t_uint256,t_mapping(t_address,t_struct(Proof)2044_storage))",
+              "src": "contracts\\verifiers\\Verifier.sol:67",
+              "offset": 0,
+              "slot": "0"
+            },
+            {
+              "contract": "Verifier",
+              "label": "_requests",
+              "type": "t_mapping(t_uint256,t_struct(RequestData)614_storage)",
+              "src": "contracts\\verifiers\\Verifier.sol:68",
+              "offset": 0,
+              "slot": "1"
+            },
+            {
+              "contract": "Verifier",
+              "label": "_requestIds",
+              "type": "t_array(t_uint256)dyn_storage",
+              "src": "contracts\\verifiers\\Verifier.sol:69",
+              "offset": 0,
+              "slot": "2"
+            },
+            {
+              "contract": "Verifier",
+              "label": "_state",
+              "type": "t_contract(IState)583",
+              "src": "contracts\\verifiers\\Verifier.sol:70",
+              "offset": 0,
+              "slot": "3"
+            },
+            {
+              "contract": "Verifier",
+              "label": "_groupedRequests",
+              "type": "t_mapping(t_uint256,t_array(t_uint256)dyn_storage)",
+              "src": "contracts\\verifiers\\Verifier.sol:71",
+              "offset": 0,
+              "slot": "4"
+            },
+            {
+              "contract": "Verifier",
+              "label": "_groupIds",
+              "type": "t_array(t_uint256)dyn_storage",
+              "src": "contracts\\verifiers\\Verifier.sol:72",
+              "offset": 0,
+              "slot": "5"
+            },
+            {
+              "contract": "Verifier",
+              "label": "_multiRequests",
+              "type": "t_mapping(t_uint256,t_struct(MultiRequest)672_storage)",
+              "src": "contracts\\verifiers\\Verifier.sol:74",
+              "offset": 0,
+              "slot": "6"
+            },
+            {
+              "contract": "Verifier",
+              "label": "_multiRequestIds",
+              "type": "t_array(t_uint256)dyn_storage",
+              "src": "contracts\\verifiers\\Verifier.sol:75",
+              "offset": 0,
+              "slot": "7"
+            },
+            {
+              "contract": "Verifier",
+              "label": "_authMethodsNames",
+              "type": "t_array(t_string_storage)dyn_storage",
+              "src": "contracts\\verifiers\\Verifier.sol:77",
+              "offset": 0,
+              "slot": "8"
+            },
+            {
+              "contract": "Verifier",
+              "label": "_authMethods",
+              "type": "t_mapping(t_string_memory_ptr,t_struct(AuthMethodData)1976_storage)",
+              "src": "contracts\\verifiers\\Verifier.sol:78",
+              "offset": 0,
+              "slot": "9"
+            },
+            {
+              "contract": "Verifier",
+              "label": "_nullifierSessionIDs",
+              "type": "t_mapping(t_uint256,t_uint256)",
+              "src": "contracts\\verifiers\\Verifier.sol:79",
+              "offset": 0,
+              "slot": "10"
+            },
+            {
+              "contract": "Verifier",
+              "label": "_verifierID",
+              "type": "t_uint256",
+              "src": "contracts\\verifiers\\Verifier.sol:81",
+              "offset": 0,
+              "slot": "11"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Ownable2Step": [
+            {
+              "contract": "Ownable2StepUpgradeable",
+              "label": "_pendingOwner",
+              "type": "t_address",
+              "src": "@openzeppelin\\contracts-upgradeable\\access\\Ownable2StepUpgradeable.sol:29",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Ownable": [
+            {
+              "contract": "OwnableUpgradeable",
+              "label": "_owner",
+              "type": "t_address",
+              "src": "@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:24",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Initializable": [
+            {
+              "contract": "Initializable",
+              "label": "_initialized",
+              "type": "t_uint64",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:69",
+              "offset": 0,
+              "slot": "0"
+            },
+            {
+              "contract": "Initializable",
+              "label": "_initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:73",
+              "offset": 8,
+              "slot": "0"
+            }
+          ]
+        }
+      }
+    },
+    "11766c5b91cd0e71e6fc6441632ab5d52e1fa71fda30373a83d48bb9be733dde": {
+      "address": "0xb00f31A22590C197Da7eb5a3c4D0f4aC2E6e7b11",
+      "txHash": "0xa8aff2a6da85ffbf992571afd76c7da59008ec9556a7af73e26469ae2eaef066",
+      "layout": {
+        "solcVersion": "0.8.27",
+        "storage": [],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_string_storage)dyn_storage": {
+            "label": "string[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_struct(ProofEntry)2064_storage)dyn_storage": {
+            "label": "struct Verifier.ProofEntry[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_uint256)45_storage": {
+            "label": "uint256[45]",
+            "numberOfBytes": "1440"
+          },
+          "t_array(t_uint256)dyn_storage": {
+            "label": "uint256[]",
+            "numberOfBytes": "32"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_bytes_storage": {
+            "label": "bytes",
+            "numberOfBytes": "32"
+          },
+          "t_contract(IAuthValidator)271": {
+            "label": "contract IAuthValidator",
+            "numberOfBytes": "20"
+          },
+          "t_contract(IRequestValidator)334": {
+            "label": "contract IRequestValidator",
+            "numberOfBytes": "20"
+          },
+          "t_contract(IState)583": {
+            "label": "contract IState",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_address,t_struct(Proof)2044_storage)": {
+            "label": "mapping(address => struct Verifier.Proof)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_contract(IRequestValidator)334,t_bool)": {
+            "label": "mapping(contract IRequestValidator => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_string_memory_ptr,t_struct(AuthMethodData)1976_storage)": {
+            "label": "mapping(string => struct Verifier.AuthMethodData)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_string_memory_ptr,t_uint256)": {
+            "label": "mapping(string => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_address)": {
+            "label": "mapping(uint256 => address)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_array(t_uint256)dyn_storage)": {
+            "label": "mapping(uint256 => uint256[])",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_bool)": {
+            "label": "mapping(uint256 => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_mapping(t_address,t_struct(Proof)2044_storage))": {
+            "label": "mapping(uint256 => mapping(address => struct Verifier.Proof))",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_struct(MultiRequest)672_storage)": {
+            "label": "mapping(uint256 => struct IVerifier.MultiRequest)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_struct(RequestData)614_storage)": {
+            "label": "mapping(uint256 => struct IVerifier.RequestData)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_uint256)": {
+            "label": "mapping(uint256 => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_string_memory_ptr": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_struct(AuthMethodData)1976_storage": {
+            "label": "struct Verifier.AuthMethodData",
+            "members": [
+              {
+                "label": "validator",
+                "type": "t_contract(IAuthValidator)271",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "params",
+                "type": "t_bytes_storage",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "isActive",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "2"
+              }
+            ],
+            "numberOfBytes": "96"
+          },
+          "t_struct(InitializableStorage)146_storage": {
+            "label": "struct Initializable.InitializableStorage",
+            "members": [
+              {
+                "label": "_initialized",
+                "type": "t_uint64",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "_initializing",
+                "type": "t_bool",
+                "offset": 8,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(MultiRequest)672_storage": {
+            "label": "struct IVerifier.MultiRequest",
+            "members": [
+              {
+                "label": "multiRequestId",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "requestIds",
+                "type": "t_array(t_uint256)dyn_storage",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "groupIds",
+                "type": "t_array(t_uint256)dyn_storage",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "metadata",
+                "type": "t_bytes_storage",
+                "offset": 0,
+                "slot": "3"
+              }
+            ],
+            "numberOfBytes": "128"
+          },
+          "t_struct(Ownable2StepStorage)14_storage": {
+            "label": "struct Ownable2StepUpgradeable.Ownable2StepStorage",
+            "members": [
+              {
+                "label": "_pendingOwner",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(OwnableStorage)74_storage": {
+            "label": "struct OwnableUpgradeable.OwnableStorage",
+            "members": [
+              {
+                "label": "_owner",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(Proof)2044_storage": {
+            "label": "struct Verifier.Proof",
+            "members": [
+              {
+                "label": "isVerified",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "proofEntries",
+                "type": "t_array(t_struct(ProofEntry)2064_storage)dyn_storage",
+                "offset": 0,
+                "slot": "1"
+              }
+            ],
+            "numberOfBytes": "64"
+          },
+          "t_struct(ProofEntry)2064_storage": {
+            "label": "struct Verifier.ProofEntry",
+            "members": [
+              {
+                "label": "responseFields",
+                "type": "t_mapping(t_string_memory_ptr,t_uint256)",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "responseFieldNames",
+                "type": "t_array(t_string_storage)dyn_storage",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "responseFieldIndexes",
+                "type": "t_mapping(t_string_memory_ptr,t_uint256)",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "validatorVersion",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "blockTimestamp",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "__gap",
+                "type": "t_array(t_uint256)45_storage",
+                "offset": 0,
+                "slot": "5"
+              }
+            ],
+            "numberOfBytes": "1600"
+          },
+          "t_struct(RequestData)614_storage": {
+            "label": "struct IVerifier.RequestData",
+            "members": [
+              {
+                "label": "metadata",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "validator",
+                "type": "t_contract(IRequestValidator)334",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "params",
+                "type": "t_bytes_storage",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "creator",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "3"
+              }
+            ],
+            "numberOfBytes": "128"
+          },
+          "t_struct(RequestDisableStorage)1514_storage": {
+            "label": "struct RequestDisableable.RequestDisableStorage",
+            "members": [
+              {
+                "label": "_requestDisabling",
+                "type": "t_mapping(t_uint256,t_bool)",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(RequestOwnershipStorage)1571_storage": {
+            "label": "struct RequestOwnership.RequestOwnershipStorage",
+            "members": [
+              {
+                "label": "_requestOwners",
+                "type": "t_mapping(t_uint256,t_address)",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(ValidatorWhitelistStorage)1829_storage": {
+            "label": "struct ValidatorWhitelist.ValidatorWhitelistStorage",
+            "members": [
+              {
+                "label": "_validatorWhitelist",
+                "type": "t_mapping(t_contract(IRequestValidator)334,t_bool)",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(VerifierStorage)2033_storage": {
+            "label": "struct Verifier.VerifierStorage",
+            "members": [
+              {
+                "label": "_proofs",
+                "type": "t_mapping(t_uint256,t_mapping(t_address,t_struct(Proof)2044_storage))",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "_requests",
+                "type": "t_mapping(t_uint256,t_struct(RequestData)614_storage)",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "_requestIds",
+                "type": "t_array(t_uint256)dyn_storage",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "_state",
+                "type": "t_contract(IState)583",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "_groupedRequests",
+                "type": "t_mapping(t_uint256,t_array(t_uint256)dyn_storage)",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "_groupIds",
+                "type": "t_array(t_uint256)dyn_storage",
+                "offset": 0,
+                "slot": "5"
+              },
+              {
+                "label": "_multiRequests",
+                "type": "t_mapping(t_uint256,t_struct(MultiRequest)672_storage)",
+                "offset": 0,
+                "slot": "6"
+              },
+              {
+                "label": "_multiRequestIds",
+                "type": "t_array(t_uint256)dyn_storage",
+                "offset": 0,
+                "slot": "7"
+              },
+              {
+                "label": "_authMethodsNames",
+                "type": "t_array(t_string_storage)dyn_storage",
+                "offset": 0,
+                "slot": "8"
+              },
+              {
+                "label": "_authMethods",
+                "type": "t_mapping(t_string_memory_ptr,t_struct(AuthMethodData)1976_storage)",
+                "offset": 0,
+                "slot": "9"
+              },
+              {
+                "label": "_nullifierSessionIDs",
+                "type": "t_mapping(t_uint256,t_uint256)",
+                "offset": 0,
+                "slot": "10"
+              },
+              {
+                "label": "_verifierID",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "11"
+              }
+            ],
+            "numberOfBytes": "384"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint64": {
+            "label": "uint64",
+            "numberOfBytes": "8"
+          }
+        },
+        "namespaces": {
+          "erc7201:iden3.storage.ValidatorWhitelist": [
+            {
+              "contract": "ValidatorWhitelist",
+              "label": "_validatorWhitelist",
+              "type": "t_mapping(t_contract(IRequestValidator)334,t_bool)",
+              "src": "contracts\\verifiers\\ValidatorWhitelist.sol:15",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:iden3.storage.RequestDisableable": [
+            {
+              "contract": "RequestDisableable",
+              "label": "_requestDisabling",
+              "type": "t_mapping(t_uint256,t_bool)",
+              "src": "contracts\\verifiers\\RequestDisableable.sol:12",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:iden3.storage.RequestOwnership": [
+            {
+              "contract": "RequestOwnership",
+              "label": "_requestOwners",
+              "type": "t_mapping(t_uint256,t_address)",
+              "src": "contracts\\verifiers\\RequestOwnership.sol:10",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:iden3.storage.Verifier": [
+            {
+              "contract": "Verifier",
+              "label": "_proofs",
+              "type": "t_mapping(t_uint256,t_mapping(t_address,t_struct(Proof)2044_storage))",
+              "src": "contracts\\verifiers\\Verifier.sol:67",
+              "offset": 0,
+              "slot": "0"
+            },
+            {
+              "contract": "Verifier",
+              "label": "_requests",
+              "type": "t_mapping(t_uint256,t_struct(RequestData)614_storage)",
+              "src": "contracts\\verifiers\\Verifier.sol:68",
+              "offset": 0,
+              "slot": "1"
+            },
+            {
+              "contract": "Verifier",
+              "label": "_requestIds",
+              "type": "t_array(t_uint256)dyn_storage",
+              "src": "contracts\\verifiers\\Verifier.sol:69",
+              "offset": 0,
+              "slot": "2"
+            },
+            {
+              "contract": "Verifier",
+              "label": "_state",
+              "type": "t_contract(IState)583",
+              "src": "contracts\\verifiers\\Verifier.sol:70",
+              "offset": 0,
+              "slot": "3"
+            },
+            {
+              "contract": "Verifier",
+              "label": "_groupedRequests",
+              "type": "t_mapping(t_uint256,t_array(t_uint256)dyn_storage)",
+              "src": "contracts\\verifiers\\Verifier.sol:71",
+              "offset": 0,
+              "slot": "4"
+            },
+            {
+              "contract": "Verifier",
+              "label": "_groupIds",
+              "type": "t_array(t_uint256)dyn_storage",
+              "src": "contracts\\verifiers\\Verifier.sol:72",
+              "offset": 0,
+              "slot": "5"
+            },
+            {
+              "contract": "Verifier",
+              "label": "_multiRequests",
+              "type": "t_mapping(t_uint256,t_struct(MultiRequest)672_storage)",
+              "src": "contracts\\verifiers\\Verifier.sol:74",
+              "offset": 0,
+              "slot": "6"
+            },
+            {
+              "contract": "Verifier",
+              "label": "_multiRequestIds",
+              "type": "t_array(t_uint256)dyn_storage",
+              "src": "contracts\\verifiers\\Verifier.sol:75",
+              "offset": 0,
+              "slot": "7"
+            },
+            {
+              "contract": "Verifier",
+              "label": "_authMethodsNames",
+              "type": "t_array(t_string_storage)dyn_storage",
+              "src": "contracts\\verifiers\\Verifier.sol:77",
+              "offset": 0,
+              "slot": "8"
+            },
+            {
+              "contract": "Verifier",
+              "label": "_authMethods",
+              "type": "t_mapping(t_string_memory_ptr,t_struct(AuthMethodData)1976_storage)",
+              "src": "contracts\\verifiers\\Verifier.sol:78",
+              "offset": 0,
+              "slot": "9"
+            },
+            {
+              "contract": "Verifier",
+              "label": "_nullifierSessionIDs",
+              "type": "t_mapping(t_uint256,t_uint256)",
+              "src": "contracts\\verifiers\\Verifier.sol:79",
+              "offset": 0,
+              "slot": "10"
+            },
+            {
+              "contract": "Verifier",
+              "label": "_verifierID",
+              "type": "t_uint256",
+              "src": "contracts\\verifiers\\Verifier.sol:81",
+              "offset": 0,
+              "slot": "11"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Ownable2Step": [
+            {
+              "contract": "Ownable2StepUpgradeable",
+              "label": "_pendingOwner",
+              "type": "t_address",
+              "src": "@openzeppelin\\contracts-upgradeable\\access\\Ownable2StepUpgradeable.sol:29",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Ownable": [
+            {
+              "contract": "OwnableUpgradeable",
+              "label": "_owner",
+              "type": "t_address",
+              "src": "@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:24",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Initializable": [
+            {
+              "contract": "Initializable",
+              "label": "_initialized",
+              "type": "t_uint64",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:69",
+              "offset": 0,
+              "slot": "0"
+            },
+            {
+              "contract": "Initializable",
+              "label": "_initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:73",
+              "offset": 8,
+              "slot": "0"
+            }
+          ]
+        }
+      }
+    },
+    "fc953a77d9b38de9d7bcec5289f33ea46d3d34499dccc74f49bddc34a27d2072": {
+      "address": "0x76752Bcc69bfddfA5A290cAEDEAA7dF19E570342",
+      "txHash": "0xe06f7bfd36c1720a935332aaed65c001c235ddb690797028be6d5d39020b1182",
+      "layout": {
+        "solcVersion": "0.8.27",
+        "storage": [],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_string_storage)dyn_storage": {
+            "label": "string[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_struct(ProofEntry)2064_storage)dyn_storage": {
+            "label": "struct Verifier.ProofEntry[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_uint256)45_storage": {
+            "label": "uint256[45]",
+            "numberOfBytes": "1440"
+          },
+          "t_array(t_uint256)dyn_storage": {
+            "label": "uint256[]",
+            "numberOfBytes": "32"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_bytes_storage": {
+            "label": "bytes",
+            "numberOfBytes": "32"
+          },
+          "t_contract(IAuthValidator)271": {
+            "label": "contract IAuthValidator",
+            "numberOfBytes": "20"
+          },
+          "t_contract(IRequestValidator)334": {
+            "label": "contract IRequestValidator",
+            "numberOfBytes": "20"
+          },
+          "t_contract(IState)583": {
+            "label": "contract IState",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_address,t_struct(Proof)2044_storage)": {
+            "label": "mapping(address => struct Verifier.Proof)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_contract(IRequestValidator)334,t_bool)": {
+            "label": "mapping(contract IRequestValidator => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_string_memory_ptr,t_struct(AuthMethodData)1976_storage)": {
+            "label": "mapping(string => struct Verifier.AuthMethodData)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_string_memory_ptr,t_uint256)": {
+            "label": "mapping(string => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_address)": {
+            "label": "mapping(uint256 => address)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_array(t_uint256)dyn_storage)": {
+            "label": "mapping(uint256 => uint256[])",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_bool)": {
+            "label": "mapping(uint256 => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_mapping(t_address,t_struct(Proof)2044_storage))": {
+            "label": "mapping(uint256 => mapping(address => struct Verifier.Proof))",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_struct(MultiRequest)672_storage)": {
+            "label": "mapping(uint256 => struct IVerifier.MultiRequest)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_struct(RequestData)614_storage)": {
+            "label": "mapping(uint256 => struct IVerifier.RequestData)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_uint256)": {
+            "label": "mapping(uint256 => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_string_memory_ptr": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_struct(AuthMethodData)1976_storage": {
+            "label": "struct Verifier.AuthMethodData",
+            "members": [
+              {
+                "label": "validator",
+                "type": "t_contract(IAuthValidator)271",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "params",
+                "type": "t_bytes_storage",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "isActive",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "2"
+              }
+            ],
+            "numberOfBytes": "96"
+          },
+          "t_struct(InitializableStorage)146_storage": {
+            "label": "struct Initializable.InitializableStorage",
+            "members": [
+              {
+                "label": "_initialized",
+                "type": "t_uint64",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "_initializing",
+                "type": "t_bool",
+                "offset": 8,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(MultiRequest)672_storage": {
+            "label": "struct IVerifier.MultiRequest",
+            "members": [
+              {
+                "label": "multiRequestId",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "requestIds",
+                "type": "t_array(t_uint256)dyn_storage",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "groupIds",
+                "type": "t_array(t_uint256)dyn_storage",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "metadata",
+                "type": "t_bytes_storage",
+                "offset": 0,
+                "slot": "3"
+              }
+            ],
+            "numberOfBytes": "128"
+          },
+          "t_struct(Ownable2StepStorage)14_storage": {
+            "label": "struct Ownable2StepUpgradeable.Ownable2StepStorage",
+            "members": [
+              {
+                "label": "_pendingOwner",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(OwnableStorage)74_storage": {
+            "label": "struct OwnableUpgradeable.OwnableStorage",
+            "members": [
+              {
+                "label": "_owner",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(Proof)2044_storage": {
+            "label": "struct Verifier.Proof",
+            "members": [
+              {
+                "label": "isVerified",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "proofEntries",
+                "type": "t_array(t_struct(ProofEntry)2064_storage)dyn_storage",
+                "offset": 0,
+                "slot": "1"
+              }
+            ],
+            "numberOfBytes": "64"
+          },
+          "t_struct(ProofEntry)2064_storage": {
+            "label": "struct Verifier.ProofEntry",
+            "members": [
+              {
+                "label": "responseFields",
+                "type": "t_mapping(t_string_memory_ptr,t_uint256)",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "responseFieldNames",
+                "type": "t_array(t_string_storage)dyn_storage",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "responseFieldIndexes",
+                "type": "t_mapping(t_string_memory_ptr,t_uint256)",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "validatorVersion",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "blockTimestamp",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "__gap",
+                "type": "t_array(t_uint256)45_storage",
+                "offset": 0,
+                "slot": "5"
+              }
+            ],
+            "numberOfBytes": "1600"
+          },
+          "t_struct(RequestData)614_storage": {
+            "label": "struct IVerifier.RequestData",
+            "members": [
+              {
+                "label": "metadata",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "validator",
+                "type": "t_contract(IRequestValidator)334",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "params",
+                "type": "t_bytes_storage",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "creator",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "3"
+              }
+            ],
+            "numberOfBytes": "128"
+          },
+          "t_struct(RequestDisableStorage)1514_storage": {
+            "label": "struct RequestDisableable.RequestDisableStorage",
+            "members": [
+              {
+                "label": "_requestDisabling",
+                "type": "t_mapping(t_uint256,t_bool)",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(RequestOwnershipStorage)1571_storage": {
+            "label": "struct RequestOwnership.RequestOwnershipStorage",
+            "members": [
+              {
+                "label": "_requestOwners",
+                "type": "t_mapping(t_uint256,t_address)",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(ValidatorWhitelistStorage)1829_storage": {
+            "label": "struct ValidatorWhitelist.ValidatorWhitelistStorage",
+            "members": [
+              {
+                "label": "_validatorWhitelist",
+                "type": "t_mapping(t_contract(IRequestValidator)334,t_bool)",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(VerifierStorage)2033_storage": {
+            "label": "struct Verifier.VerifierStorage",
+            "members": [
+              {
+                "label": "_proofs",
+                "type": "t_mapping(t_uint256,t_mapping(t_address,t_struct(Proof)2044_storage))",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "_requests",
+                "type": "t_mapping(t_uint256,t_struct(RequestData)614_storage)",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "_requestIds",
+                "type": "t_array(t_uint256)dyn_storage",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "_state",
+                "type": "t_contract(IState)583",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "_groupedRequests",
+                "type": "t_mapping(t_uint256,t_array(t_uint256)dyn_storage)",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "_groupIds",
+                "type": "t_array(t_uint256)dyn_storage",
+                "offset": 0,
+                "slot": "5"
+              },
+              {
+                "label": "_multiRequests",
+                "type": "t_mapping(t_uint256,t_struct(MultiRequest)672_storage)",
+                "offset": 0,
+                "slot": "6"
+              },
+              {
+                "label": "_multiRequestIds",
+                "type": "t_array(t_uint256)dyn_storage",
+                "offset": 0,
+                "slot": "7"
+              },
+              {
+                "label": "_authMethodsNames",
+                "type": "t_array(t_string_storage)dyn_storage",
+                "offset": 0,
+                "slot": "8"
+              },
+              {
+                "label": "_authMethods",
+                "type": "t_mapping(t_string_memory_ptr,t_struct(AuthMethodData)1976_storage)",
+                "offset": 0,
+                "slot": "9"
+              },
+              {
+                "label": "_nullifierSessionIDs",
+                "type": "t_mapping(t_uint256,t_uint256)",
+                "offset": 0,
+                "slot": "10"
+              },
+              {
+                "label": "_verifierID",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "11"
+              }
+            ],
+            "numberOfBytes": "384"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint64": {
+            "label": "uint64",
+            "numberOfBytes": "8"
+          }
+        },
+        "namespaces": {
+          "erc7201:iden3.storage.ValidatorWhitelist": [
+            {
+              "contract": "ValidatorWhitelist",
+              "label": "_validatorWhitelist",
+              "type": "t_mapping(t_contract(IRequestValidator)334,t_bool)",
+              "src": "contracts\\verifiers\\ValidatorWhitelist.sol:15",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:iden3.storage.RequestDisableable": [
+            {
+              "contract": "RequestDisableable",
+              "label": "_requestDisabling",
+              "type": "t_mapping(t_uint256,t_bool)",
+              "src": "contracts\\verifiers\\RequestDisableable.sol:12",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:iden3.storage.RequestOwnership": [
+            {
+              "contract": "RequestOwnership",
+              "label": "_requestOwners",
+              "type": "t_mapping(t_uint256,t_address)",
+              "src": "contracts\\verifiers\\RequestOwnership.sol:10",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:iden3.storage.Verifier": [
+            {
+              "contract": "Verifier",
+              "label": "_proofs",
+              "type": "t_mapping(t_uint256,t_mapping(t_address,t_struct(Proof)2044_storage))",
+              "src": "contracts\\verifiers\\Verifier.sol:67",
+              "offset": 0,
+              "slot": "0"
+            },
+            {
+              "contract": "Verifier",
+              "label": "_requests",
+              "type": "t_mapping(t_uint256,t_struct(RequestData)614_storage)",
+              "src": "contracts\\verifiers\\Verifier.sol:68",
+              "offset": 0,
+              "slot": "1"
+            },
+            {
+              "contract": "Verifier",
+              "label": "_requestIds",
+              "type": "t_array(t_uint256)dyn_storage",
+              "src": "contracts\\verifiers\\Verifier.sol:69",
+              "offset": 0,
+              "slot": "2"
+            },
+            {
+              "contract": "Verifier",
+              "label": "_state",
+              "type": "t_contract(IState)583",
+              "src": "contracts\\verifiers\\Verifier.sol:70",
+              "offset": 0,
+              "slot": "3"
+            },
+            {
+              "contract": "Verifier",
+              "label": "_groupedRequests",
+              "type": "t_mapping(t_uint256,t_array(t_uint256)dyn_storage)",
+              "src": "contracts\\verifiers\\Verifier.sol:71",
+              "offset": 0,
+              "slot": "4"
+            },
+            {
+              "contract": "Verifier",
+              "label": "_groupIds",
+              "type": "t_array(t_uint256)dyn_storage",
+              "src": "contracts\\verifiers\\Verifier.sol:72",
+              "offset": 0,
+              "slot": "5"
+            },
+            {
+              "contract": "Verifier",
+              "label": "_multiRequests",
+              "type": "t_mapping(t_uint256,t_struct(MultiRequest)672_storage)",
+              "src": "contracts\\verifiers\\Verifier.sol:74",
+              "offset": 0,
+              "slot": "6"
+            },
+            {
+              "contract": "Verifier",
+              "label": "_multiRequestIds",
+              "type": "t_array(t_uint256)dyn_storage",
+              "src": "contracts\\verifiers\\Verifier.sol:75",
+              "offset": 0,
+              "slot": "7"
+            },
+            {
+              "contract": "Verifier",
+              "label": "_authMethodsNames",
+              "type": "t_array(t_string_storage)dyn_storage",
+              "src": "contracts\\verifiers\\Verifier.sol:77",
+              "offset": 0,
+              "slot": "8"
+            },
+            {
+              "contract": "Verifier",
+              "label": "_authMethods",
+              "type": "t_mapping(t_string_memory_ptr,t_struct(AuthMethodData)1976_storage)",
+              "src": "contracts\\verifiers\\Verifier.sol:78",
+              "offset": 0,
+              "slot": "9"
+            },
+            {
+              "contract": "Verifier",
+              "label": "_nullifierSessionIDs",
+              "type": "t_mapping(t_uint256,t_uint256)",
+              "src": "contracts\\verifiers\\Verifier.sol:79",
+              "offset": 0,
+              "slot": "10"
+            },
+            {
+              "contract": "Verifier",
+              "label": "_verifierID",
+              "type": "t_uint256",
+              "src": "contracts\\verifiers\\Verifier.sol:81",
+              "offset": 0,
+              "slot": "11"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Ownable2Step": [
+            {
+              "contract": "Ownable2StepUpgradeable",
+              "label": "_pendingOwner",
+              "type": "t_address",
+              "src": "@openzeppelin\\contracts-upgradeable\\access\\Ownable2StepUpgradeable.sol:29",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Ownable": [
+            {
+              "contract": "OwnableUpgradeable",
+              "label": "_owner",
+              "type": "t_address",
+              "src": "@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:24",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Initializable": [
+            {
+              "contract": "Initializable",
+              "label": "_initialized",
+              "type": "t_uint64",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:69",
+              "offset": 0,
+              "slot": "0"
+            },
+            {
+              "contract": "Initializable",
+              "label": "_initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:73",
+              "offset": 8,
+              "slot": "0"
+            }
+          ]
+        }
+      }
+    },
+    "a26a99862faab14e92e8407b72674ca897128f91cb25a13fe59dd0ef204333a6": {
+      "address": "0x678d4EFc2427bC480F090121aA164495596a7276",
+      "txHash": "0x01fe974267e3d40838a05a20dc57901039c51f8c5374f089a23e1b9092b058e5",
+      "layout": {
+        "solcVersion": "0.8.27",
+        "storage": [],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_string_storage)dyn_storage": {
+            "label": "string[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_struct(ProofEntry)2064_storage)dyn_storage": {
+            "label": "struct Verifier.ProofEntry[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_uint256)45_storage": {
+            "label": "uint256[45]",
+            "numberOfBytes": "1440"
+          },
+          "t_array(t_uint256)dyn_storage": {
+            "label": "uint256[]",
+            "numberOfBytes": "32"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_bytes_storage": {
+            "label": "bytes",
+            "numberOfBytes": "32"
+          },
+          "t_contract(IAuthValidator)271": {
+            "label": "contract IAuthValidator",
+            "numberOfBytes": "20"
+          },
+          "t_contract(IRequestValidator)334": {
+            "label": "contract IRequestValidator",
+            "numberOfBytes": "20"
+          },
+          "t_contract(IState)583": {
+            "label": "contract IState",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_address,t_struct(Proof)2044_storage)": {
+            "label": "mapping(address => struct Verifier.Proof)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_contract(IRequestValidator)334,t_bool)": {
+            "label": "mapping(contract IRequestValidator => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_string_memory_ptr,t_struct(AuthMethodData)1976_storage)": {
+            "label": "mapping(string => struct Verifier.AuthMethodData)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_string_memory_ptr,t_uint256)": {
+            "label": "mapping(string => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_address)": {
+            "label": "mapping(uint256 => address)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_array(t_uint256)dyn_storage)": {
+            "label": "mapping(uint256 => uint256[])",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_bool)": {
+            "label": "mapping(uint256 => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_mapping(t_address,t_struct(Proof)2044_storage))": {
+            "label": "mapping(uint256 => mapping(address => struct Verifier.Proof))",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_struct(MultiRequest)672_storage)": {
+            "label": "mapping(uint256 => struct IVerifier.MultiRequest)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_struct(RequestData)614_storage)": {
+            "label": "mapping(uint256 => struct IVerifier.RequestData)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_uint256)": {
+            "label": "mapping(uint256 => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_string_memory_ptr": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_struct(AuthMethodData)1976_storage": {
+            "label": "struct Verifier.AuthMethodData",
+            "members": [
+              {
+                "label": "validator",
+                "type": "t_contract(IAuthValidator)271",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "params",
+                "type": "t_bytes_storage",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "isActive",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "2"
+              }
+            ],
+            "numberOfBytes": "96"
+          },
+          "t_struct(InitializableStorage)146_storage": {
+            "label": "struct Initializable.InitializableStorage",
+            "members": [
+              {
+                "label": "_initialized",
+                "type": "t_uint64",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "_initializing",
+                "type": "t_bool",
+                "offset": 8,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(MultiRequest)672_storage": {
+            "label": "struct IVerifier.MultiRequest",
+            "members": [
+              {
+                "label": "multiRequestId",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "requestIds",
+                "type": "t_array(t_uint256)dyn_storage",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "groupIds",
+                "type": "t_array(t_uint256)dyn_storage",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "metadata",
+                "type": "t_bytes_storage",
+                "offset": 0,
+                "slot": "3"
+              }
+            ],
+            "numberOfBytes": "128"
+          },
+          "t_struct(Ownable2StepStorage)14_storage": {
+            "label": "struct Ownable2StepUpgradeable.Ownable2StepStorage",
+            "members": [
+              {
+                "label": "_pendingOwner",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(OwnableStorage)74_storage": {
+            "label": "struct OwnableUpgradeable.OwnableStorage",
+            "members": [
+              {
+                "label": "_owner",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(Proof)2044_storage": {
+            "label": "struct Verifier.Proof",
+            "members": [
+              {
+                "label": "isVerified",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "proofEntries",
+                "type": "t_array(t_struct(ProofEntry)2064_storage)dyn_storage",
+                "offset": 0,
+                "slot": "1"
+              }
+            ],
+            "numberOfBytes": "64"
+          },
+          "t_struct(ProofEntry)2064_storage": {
+            "label": "struct Verifier.ProofEntry",
+            "members": [
+              {
+                "label": "responseFields",
+                "type": "t_mapping(t_string_memory_ptr,t_uint256)",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "responseFieldNames",
+                "type": "t_array(t_string_storage)dyn_storage",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "responseFieldIndexes",
+                "type": "t_mapping(t_string_memory_ptr,t_uint256)",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "validatorVersion",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "blockTimestamp",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "__gap",
+                "type": "t_array(t_uint256)45_storage",
+                "offset": 0,
+                "slot": "5"
+              }
+            ],
+            "numberOfBytes": "1600"
+          },
+          "t_struct(RequestData)614_storage": {
+            "label": "struct IVerifier.RequestData",
+            "members": [
+              {
+                "label": "metadata",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "validator",
+                "type": "t_contract(IRequestValidator)334",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "params",
+                "type": "t_bytes_storage",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "creator",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "3"
+              }
+            ],
+            "numberOfBytes": "128"
+          },
+          "t_struct(RequestDisableStorage)1514_storage": {
+            "label": "struct RequestDisableable.RequestDisableStorage",
+            "members": [
+              {
+                "label": "_requestDisabling",
+                "type": "t_mapping(t_uint256,t_bool)",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(RequestOwnershipStorage)1571_storage": {
+            "label": "struct RequestOwnership.RequestOwnershipStorage",
+            "members": [
+              {
+                "label": "_requestOwners",
+                "type": "t_mapping(t_uint256,t_address)",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(ValidatorWhitelistStorage)1829_storage": {
+            "label": "struct ValidatorWhitelist.ValidatorWhitelistStorage",
+            "members": [
+              {
+                "label": "_validatorWhitelist",
+                "type": "t_mapping(t_contract(IRequestValidator)334,t_bool)",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(VerifierStorage)2033_storage": {
+            "label": "struct Verifier.VerifierStorage",
+            "members": [
+              {
+                "label": "_proofs",
+                "type": "t_mapping(t_uint256,t_mapping(t_address,t_struct(Proof)2044_storage))",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "_requests",
+                "type": "t_mapping(t_uint256,t_struct(RequestData)614_storage)",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "_requestIds",
+                "type": "t_array(t_uint256)dyn_storage",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "_state",
+                "type": "t_contract(IState)583",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "_groupedRequests",
+                "type": "t_mapping(t_uint256,t_array(t_uint256)dyn_storage)",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "_groupIds",
+                "type": "t_array(t_uint256)dyn_storage",
+                "offset": 0,
+                "slot": "5"
+              },
+              {
+                "label": "_multiRequests",
+                "type": "t_mapping(t_uint256,t_struct(MultiRequest)672_storage)",
+                "offset": 0,
+                "slot": "6"
+              },
+              {
+                "label": "_multiRequestIds",
+                "type": "t_array(t_uint256)dyn_storage",
+                "offset": 0,
+                "slot": "7"
+              },
+              {
+                "label": "_authMethodsNames",
+                "type": "t_array(t_string_storage)dyn_storage",
+                "offset": 0,
+                "slot": "8"
+              },
+              {
+                "label": "_authMethods",
+                "type": "t_mapping(t_string_memory_ptr,t_struct(AuthMethodData)1976_storage)",
+                "offset": 0,
+                "slot": "9"
+              },
+              {
+                "label": "_nullifierSessionIDs",
+                "type": "t_mapping(t_uint256,t_uint256)",
+                "offset": 0,
+                "slot": "10"
+              },
+              {
+                "label": "_verifierID",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "11"
+              }
+            ],
+            "numberOfBytes": "384"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint64": {
+            "label": "uint64",
+            "numberOfBytes": "8"
+          }
+        },
+        "namespaces": {
+          "erc7201:iden3.storage.ValidatorWhitelist": [
+            {
+              "contract": "ValidatorWhitelist",
+              "label": "_validatorWhitelist",
+              "type": "t_mapping(t_contract(IRequestValidator)334,t_bool)",
+              "src": "contracts\\verifiers\\ValidatorWhitelist.sol:15",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:iden3.storage.RequestDisableable": [
+            {
+              "contract": "RequestDisableable",
+              "label": "_requestDisabling",
+              "type": "t_mapping(t_uint256,t_bool)",
+              "src": "contracts\\verifiers\\RequestDisableable.sol:12",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:iden3.storage.RequestOwnership": [
+            {
+              "contract": "RequestOwnership",
+              "label": "_requestOwners",
+              "type": "t_mapping(t_uint256,t_address)",
+              "src": "contracts\\verifiers\\RequestOwnership.sol:10",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:iden3.storage.Verifier": [
+            {
+              "contract": "Verifier",
+              "label": "_proofs",
+              "type": "t_mapping(t_uint256,t_mapping(t_address,t_struct(Proof)2044_storage))",
+              "src": "contracts\\verifiers\\Verifier.sol:67",
+              "offset": 0,
+              "slot": "0"
+            },
+            {
+              "contract": "Verifier",
+              "label": "_requests",
+              "type": "t_mapping(t_uint256,t_struct(RequestData)614_storage)",
+              "src": "contracts\\verifiers\\Verifier.sol:68",
+              "offset": 0,
+              "slot": "1"
+            },
+            {
+              "contract": "Verifier",
+              "label": "_requestIds",
+              "type": "t_array(t_uint256)dyn_storage",
+              "src": "contracts\\verifiers\\Verifier.sol:69",
+              "offset": 0,
+              "slot": "2"
+            },
+            {
+              "contract": "Verifier",
+              "label": "_state",
+              "type": "t_contract(IState)583",
+              "src": "contracts\\verifiers\\Verifier.sol:70",
+              "offset": 0,
+              "slot": "3"
+            },
+            {
+              "contract": "Verifier",
+              "label": "_groupedRequests",
+              "type": "t_mapping(t_uint256,t_array(t_uint256)dyn_storage)",
+              "src": "contracts\\verifiers\\Verifier.sol:71",
+              "offset": 0,
+              "slot": "4"
+            },
+            {
+              "contract": "Verifier",
+              "label": "_groupIds",
+              "type": "t_array(t_uint256)dyn_storage",
+              "src": "contracts\\verifiers\\Verifier.sol:72",
+              "offset": 0,
+              "slot": "5"
+            },
+            {
+              "contract": "Verifier",
+              "label": "_multiRequests",
+              "type": "t_mapping(t_uint256,t_struct(MultiRequest)672_storage)",
+              "src": "contracts\\verifiers\\Verifier.sol:74",
+              "offset": 0,
+              "slot": "6"
+            },
+            {
+              "contract": "Verifier",
+              "label": "_multiRequestIds",
+              "type": "t_array(t_uint256)dyn_storage",
+              "src": "contracts\\verifiers\\Verifier.sol:75",
+              "offset": 0,
+              "slot": "7"
+            },
+            {
+              "contract": "Verifier",
+              "label": "_authMethodsNames",
+              "type": "t_array(t_string_storage)dyn_storage",
+              "src": "contracts\\verifiers\\Verifier.sol:77",
+              "offset": 0,
+              "slot": "8"
+            },
+            {
+              "contract": "Verifier",
+              "label": "_authMethods",
+              "type": "t_mapping(t_string_memory_ptr,t_struct(AuthMethodData)1976_storage)",
+              "src": "contracts\\verifiers\\Verifier.sol:78",
+              "offset": 0,
+              "slot": "9"
+            },
+            {
+              "contract": "Verifier",
+              "label": "_nullifierSessionIDs",
+              "type": "t_mapping(t_uint256,t_uint256)",
+              "src": "contracts\\verifiers\\Verifier.sol:79",
+              "offset": 0,
+              "slot": "10"
+            },
+            {
+              "contract": "Verifier",
+              "label": "_verifierID",
+              "type": "t_uint256",
+              "src": "contracts\\verifiers\\Verifier.sol:81",
+              "offset": 0,
+              "slot": "11"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Ownable2Step": [
+            {
+              "contract": "Ownable2StepUpgradeable",
+              "label": "_pendingOwner",
+              "type": "t_address",
+              "src": "@openzeppelin\\contracts-upgradeable\\access\\Ownable2StepUpgradeable.sol:29",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Ownable": [
+            {
+              "contract": "OwnableUpgradeable",
+              "label": "_owner",
+              "type": "t_address",
+              "src": "@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:24",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Initializable": [
+            {
+              "contract": "Initializable",
+              "label": "_initialized",
+              "type": "t_uint64",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:69",
+              "offset": 0,
+              "slot": "0"
+            },
+            {
+              "contract": "Initializable",
+              "label": "_initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:73",
+              "offset": 8,
+              "slot": "0"
+            }
+          ]
+        }
+      }
+    },
+    "6046b877c94606cfe67d982c7e8f1fcd946868d93864b1209f606eac0f802cd9": {
+      "address": "0xd82D6510DFe7AfAc6A1C9c6d8Ee64E5E86aCE059",
+      "txHash": "0x946eefa6b9d988910c037da63838debabe8b4f1f0c1815050bff19ef9b5bb31c",
+      "layout": {
+        "solcVersion": "0.8.27",
+        "storage": [],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_string_storage)dyn_storage": {
+            "label": "string[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_struct(ProofEntry)2064_storage)dyn_storage": {
+            "label": "struct Verifier.ProofEntry[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_uint256)45_storage": {
+            "label": "uint256[45]",
+            "numberOfBytes": "1440"
+          },
+          "t_array(t_uint256)dyn_storage": {
+            "label": "uint256[]",
+            "numberOfBytes": "32"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_bytes_storage": {
+            "label": "bytes",
+            "numberOfBytes": "32"
+          },
+          "t_contract(IAuthValidator)271": {
+            "label": "contract IAuthValidator",
+            "numberOfBytes": "20"
+          },
+          "t_contract(IRequestValidator)334": {
+            "label": "contract IRequestValidator",
+            "numberOfBytes": "20"
+          },
+          "t_contract(IState)583": {
+            "label": "contract IState",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_address,t_struct(Proof)2044_storage)": {
+            "label": "mapping(address => struct Verifier.Proof)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_contract(IRequestValidator)334,t_bool)": {
+            "label": "mapping(contract IRequestValidator => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_string_memory_ptr,t_struct(AuthMethodData)1976_storage)": {
+            "label": "mapping(string => struct Verifier.AuthMethodData)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_string_memory_ptr,t_uint256)": {
+            "label": "mapping(string => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_address)": {
+            "label": "mapping(uint256 => address)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_array(t_uint256)dyn_storage)": {
+            "label": "mapping(uint256 => uint256[])",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_bool)": {
+            "label": "mapping(uint256 => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_mapping(t_address,t_struct(Proof)2044_storage))": {
+            "label": "mapping(uint256 => mapping(address => struct Verifier.Proof))",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_struct(MultiRequest)672_storage)": {
+            "label": "mapping(uint256 => struct IVerifier.MultiRequest)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_struct(RequestData)614_storage)": {
+            "label": "mapping(uint256 => struct IVerifier.RequestData)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_uint256)": {
+            "label": "mapping(uint256 => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_string_memory_ptr": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_struct(AuthMethodData)1976_storage": {
+            "label": "struct Verifier.AuthMethodData",
+            "members": [
+              {
+                "label": "validator",
+                "type": "t_contract(IAuthValidator)271",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "params",
+                "type": "t_bytes_storage",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "isActive",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "2"
+              }
+            ],
+            "numberOfBytes": "96"
+          },
+          "t_struct(InitializableStorage)146_storage": {
+            "label": "struct Initializable.InitializableStorage",
+            "members": [
+              {
+                "label": "_initialized",
+                "type": "t_uint64",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "_initializing",
+                "type": "t_bool",
+                "offset": 8,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(MultiRequest)672_storage": {
+            "label": "struct IVerifier.MultiRequest",
+            "members": [
+              {
+                "label": "multiRequestId",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "requestIds",
+                "type": "t_array(t_uint256)dyn_storage",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "groupIds",
+                "type": "t_array(t_uint256)dyn_storage",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "metadata",
+                "type": "t_bytes_storage",
+                "offset": 0,
+                "slot": "3"
+              }
+            ],
+            "numberOfBytes": "128"
+          },
+          "t_struct(Ownable2StepStorage)14_storage": {
+            "label": "struct Ownable2StepUpgradeable.Ownable2StepStorage",
+            "members": [
+              {
+                "label": "_pendingOwner",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(OwnableStorage)74_storage": {
+            "label": "struct OwnableUpgradeable.OwnableStorage",
+            "members": [
+              {
+                "label": "_owner",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(Proof)2044_storage": {
+            "label": "struct Verifier.Proof",
+            "members": [
+              {
+                "label": "isVerified",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "proofEntries",
+                "type": "t_array(t_struct(ProofEntry)2064_storage)dyn_storage",
+                "offset": 0,
+                "slot": "1"
+              }
+            ],
+            "numberOfBytes": "64"
+          },
+          "t_struct(ProofEntry)2064_storage": {
+            "label": "struct Verifier.ProofEntry",
+            "members": [
+              {
+                "label": "responseFields",
+                "type": "t_mapping(t_string_memory_ptr,t_uint256)",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "responseFieldNames",
+                "type": "t_array(t_string_storage)dyn_storage",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "responseFieldIndexes",
+                "type": "t_mapping(t_string_memory_ptr,t_uint256)",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "validatorVersion",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "blockTimestamp",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "__gap",
+                "type": "t_array(t_uint256)45_storage",
+                "offset": 0,
+                "slot": "5"
+              }
+            ],
+            "numberOfBytes": "1600"
+          },
+          "t_struct(RequestData)614_storage": {
+            "label": "struct IVerifier.RequestData",
+            "members": [
+              {
+                "label": "metadata",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "validator",
+                "type": "t_contract(IRequestValidator)334",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "params",
+                "type": "t_bytes_storage",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "creator",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "3"
+              }
+            ],
+            "numberOfBytes": "128"
+          },
+          "t_struct(RequestDisableStorage)1514_storage": {
+            "label": "struct RequestDisableable.RequestDisableStorage",
+            "members": [
+              {
+                "label": "_requestDisabling",
+                "type": "t_mapping(t_uint256,t_bool)",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(RequestOwnershipStorage)1571_storage": {
+            "label": "struct RequestOwnership.RequestOwnershipStorage",
+            "members": [
+              {
+                "label": "_requestOwners",
+                "type": "t_mapping(t_uint256,t_address)",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(ValidatorWhitelistStorage)1829_storage": {
+            "label": "struct ValidatorWhitelist.ValidatorWhitelistStorage",
+            "members": [
+              {
+                "label": "_validatorWhitelist",
+                "type": "t_mapping(t_contract(IRequestValidator)334,t_bool)",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(VerifierStorage)2033_storage": {
+            "label": "struct Verifier.VerifierStorage",
+            "members": [
+              {
+                "label": "_proofs",
+                "type": "t_mapping(t_uint256,t_mapping(t_address,t_struct(Proof)2044_storage))",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "_requests",
+                "type": "t_mapping(t_uint256,t_struct(RequestData)614_storage)",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "_requestIds",
+                "type": "t_array(t_uint256)dyn_storage",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "_state",
+                "type": "t_contract(IState)583",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "_groupedRequests",
+                "type": "t_mapping(t_uint256,t_array(t_uint256)dyn_storage)",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "_groupIds",
+                "type": "t_array(t_uint256)dyn_storage",
+                "offset": 0,
+                "slot": "5"
+              },
+              {
+                "label": "_multiRequests",
+                "type": "t_mapping(t_uint256,t_struct(MultiRequest)672_storage)",
+                "offset": 0,
+                "slot": "6"
+              },
+              {
+                "label": "_multiRequestIds",
+                "type": "t_array(t_uint256)dyn_storage",
+                "offset": 0,
+                "slot": "7"
+              },
+              {
+                "label": "_authMethodsNames",
+                "type": "t_array(t_string_storage)dyn_storage",
+                "offset": 0,
+                "slot": "8"
+              },
+              {
+                "label": "_authMethods",
+                "type": "t_mapping(t_string_memory_ptr,t_struct(AuthMethodData)1976_storage)",
+                "offset": 0,
+                "slot": "9"
+              },
+              {
+                "label": "_nullifierSessionIDs",
+                "type": "t_mapping(t_uint256,t_uint256)",
+                "offset": 0,
+                "slot": "10"
+              },
+              {
+                "label": "_verifierID",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "11"
+              }
+            ],
+            "numberOfBytes": "384"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint64": {
+            "label": "uint64",
+            "numberOfBytes": "8"
+          }
+        },
+        "namespaces": {
+          "erc7201:iden3.storage.ValidatorWhitelist": [
+            {
+              "contract": "ValidatorWhitelist",
+              "label": "_validatorWhitelist",
+              "type": "t_mapping(t_contract(IRequestValidator)334,t_bool)",
+              "src": "contracts\\verifiers\\ValidatorWhitelist.sol:15",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:iden3.storage.RequestDisableable": [
+            {
+              "contract": "RequestDisableable",
+              "label": "_requestDisabling",
+              "type": "t_mapping(t_uint256,t_bool)",
+              "src": "contracts\\verifiers\\RequestDisableable.sol:12",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:iden3.storage.RequestOwnership": [
+            {
+              "contract": "RequestOwnership",
+              "label": "_requestOwners",
+              "type": "t_mapping(t_uint256,t_address)",
+              "src": "contracts\\verifiers\\RequestOwnership.sol:10",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:iden3.storage.Verifier": [
+            {
+              "contract": "Verifier",
+              "label": "_proofs",
+              "type": "t_mapping(t_uint256,t_mapping(t_address,t_struct(Proof)2044_storage))",
+              "src": "contracts\\verifiers\\Verifier.sol:67",
+              "offset": 0,
+              "slot": "0"
+            },
+            {
+              "contract": "Verifier",
+              "label": "_requests",
+              "type": "t_mapping(t_uint256,t_struct(RequestData)614_storage)",
+              "src": "contracts\\verifiers\\Verifier.sol:68",
+              "offset": 0,
+              "slot": "1"
+            },
+            {
+              "contract": "Verifier",
+              "label": "_requestIds",
+              "type": "t_array(t_uint256)dyn_storage",
+              "src": "contracts\\verifiers\\Verifier.sol:69",
+              "offset": 0,
+              "slot": "2"
+            },
+            {
+              "contract": "Verifier",
+              "label": "_state",
+              "type": "t_contract(IState)583",
+              "src": "contracts\\verifiers\\Verifier.sol:70",
+              "offset": 0,
+              "slot": "3"
+            },
+            {
+              "contract": "Verifier",
+              "label": "_groupedRequests",
+              "type": "t_mapping(t_uint256,t_array(t_uint256)dyn_storage)",
+              "src": "contracts\\verifiers\\Verifier.sol:71",
+              "offset": 0,
+              "slot": "4"
+            },
+            {
+              "contract": "Verifier",
+              "label": "_groupIds",
+              "type": "t_array(t_uint256)dyn_storage",
+              "src": "contracts\\verifiers\\Verifier.sol:72",
+              "offset": 0,
+              "slot": "5"
+            },
+            {
+              "contract": "Verifier",
+              "label": "_multiRequests",
+              "type": "t_mapping(t_uint256,t_struct(MultiRequest)672_storage)",
+              "src": "contracts\\verifiers\\Verifier.sol:74",
+              "offset": 0,
+              "slot": "6"
+            },
+            {
+              "contract": "Verifier",
+              "label": "_multiRequestIds",
+              "type": "t_array(t_uint256)dyn_storage",
+              "src": "contracts\\verifiers\\Verifier.sol:75",
+              "offset": 0,
+              "slot": "7"
+            },
+            {
+              "contract": "Verifier",
+              "label": "_authMethodsNames",
+              "type": "t_array(t_string_storage)dyn_storage",
+              "src": "contracts\\verifiers\\Verifier.sol:77",
+              "offset": 0,
+              "slot": "8"
+            },
+            {
+              "contract": "Verifier",
+              "label": "_authMethods",
+              "type": "t_mapping(t_string_memory_ptr,t_struct(AuthMethodData)1976_storage)",
+              "src": "contracts\\verifiers\\Verifier.sol:78",
+              "offset": 0,
+              "slot": "9"
+            },
+            {
+              "contract": "Verifier",
+              "label": "_nullifierSessionIDs",
+              "type": "t_mapping(t_uint256,t_uint256)",
+              "src": "contracts\\verifiers\\Verifier.sol:79",
+              "offset": 0,
+              "slot": "10"
+            },
+            {
+              "contract": "Verifier",
+              "label": "_verifierID",
+              "type": "t_uint256",
+              "src": "contracts\\verifiers\\Verifier.sol:81",
+              "offset": 0,
+              "slot": "11"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Ownable2Step": [
+            {
+              "contract": "Ownable2StepUpgradeable",
+              "label": "_pendingOwner",
+              "type": "t_address",
+              "src": "@openzeppelin\\contracts-upgradeable\\access\\Ownable2StepUpgradeable.sol:29",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Ownable": [
+            {
+              "contract": "OwnableUpgradeable",
+              "label": "_owner",
+              "type": "t_address",
+              "src": "@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:24",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Initializable": [
+            {
+              "contract": "Initializable",
+              "label": "_initialized",
+              "type": "t_uint64",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:69",
+              "offset": 0,
+              "slot": "0"
+            },
+            {
+              "contract": "Initializable",
+              "label": "_initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:73",
+              "offset": 8,
+              "slot": "0"
+            }
+          ]
+        }
+      }
+    },
+    "9c2d7e3c6d91ab570febb6968a4c4967d47c41f3f6e7daa41255865e080e4e79": {
+      "address": "0x48e2f3068669ED66c1D2cee5f94693563d9C46fE",
+      "txHash": "0x195af5066dcf21a7aaf490b60ca8eebdf74f18e530cfdcfed8e73e536d526049",
+      "layout": {
+        "solcVersion": "0.8.27",
+        "storage": [],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_string_storage)dyn_storage": {
+            "label": "string[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_struct(ProofEntry)2064_storage)dyn_storage": {
+            "label": "struct Verifier.ProofEntry[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_uint256)45_storage": {
+            "label": "uint256[45]",
+            "numberOfBytes": "1440"
+          },
+          "t_array(t_uint256)dyn_storage": {
+            "label": "uint256[]",
+            "numberOfBytes": "32"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_bytes_storage": {
+            "label": "bytes",
+            "numberOfBytes": "32"
+          },
+          "t_contract(IAuthValidator)271": {
+            "label": "contract IAuthValidator",
+            "numberOfBytes": "20"
+          },
+          "t_contract(IRequestValidator)334": {
+            "label": "contract IRequestValidator",
+            "numberOfBytes": "20"
+          },
+          "t_contract(IState)583": {
+            "label": "contract IState",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_address,t_struct(Proof)2044_storage)": {
+            "label": "mapping(address => struct Verifier.Proof)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_contract(IRequestValidator)334,t_bool)": {
+            "label": "mapping(contract IRequestValidator => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_string_memory_ptr,t_struct(AuthMethodData)1976_storage)": {
+            "label": "mapping(string => struct Verifier.AuthMethodData)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_string_memory_ptr,t_uint256)": {
+            "label": "mapping(string => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_address)": {
+            "label": "mapping(uint256 => address)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_array(t_uint256)dyn_storage)": {
+            "label": "mapping(uint256 => uint256[])",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_bool)": {
+            "label": "mapping(uint256 => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_mapping(t_address,t_struct(Proof)2044_storage))": {
+            "label": "mapping(uint256 => mapping(address => struct Verifier.Proof))",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_struct(MultiRequest)672_storage)": {
+            "label": "mapping(uint256 => struct IVerifier.MultiRequest)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_struct(RequestData)614_storage)": {
+            "label": "mapping(uint256 => struct IVerifier.RequestData)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_uint256)": {
+            "label": "mapping(uint256 => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_string_memory_ptr": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_struct(AuthMethodData)1976_storage": {
+            "label": "struct Verifier.AuthMethodData",
+            "members": [
+              {
+                "label": "validator",
+                "type": "t_contract(IAuthValidator)271",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "params",
+                "type": "t_bytes_storage",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "isActive",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "2"
+              }
+            ],
+            "numberOfBytes": "96"
+          },
+          "t_struct(InitializableStorage)146_storage": {
+            "label": "struct Initializable.InitializableStorage",
+            "members": [
+              {
+                "label": "_initialized",
+                "type": "t_uint64",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "_initializing",
+                "type": "t_bool",
+                "offset": 8,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(MultiRequest)672_storage": {
+            "label": "struct IVerifier.MultiRequest",
+            "members": [
+              {
+                "label": "multiRequestId",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "requestIds",
+                "type": "t_array(t_uint256)dyn_storage",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "groupIds",
+                "type": "t_array(t_uint256)dyn_storage",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "metadata",
+                "type": "t_bytes_storage",
+                "offset": 0,
+                "slot": "3"
+              }
+            ],
+            "numberOfBytes": "128"
+          },
+          "t_struct(Ownable2StepStorage)14_storage": {
+            "label": "struct Ownable2StepUpgradeable.Ownable2StepStorage",
+            "members": [
+              {
+                "label": "_pendingOwner",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(OwnableStorage)74_storage": {
+            "label": "struct OwnableUpgradeable.OwnableStorage",
+            "members": [
+              {
+                "label": "_owner",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(Proof)2044_storage": {
+            "label": "struct Verifier.Proof",
+            "members": [
+              {
+                "label": "isVerified",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "proofEntries",
+                "type": "t_array(t_struct(ProofEntry)2064_storage)dyn_storage",
+                "offset": 0,
+                "slot": "1"
+              }
+            ],
+            "numberOfBytes": "64"
+          },
+          "t_struct(ProofEntry)2064_storage": {
+            "label": "struct Verifier.ProofEntry",
+            "members": [
+              {
+                "label": "responseFields",
+                "type": "t_mapping(t_string_memory_ptr,t_uint256)",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "responseFieldNames",
+                "type": "t_array(t_string_storage)dyn_storage",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "responseFieldIndexes",
+                "type": "t_mapping(t_string_memory_ptr,t_uint256)",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "validatorVersion",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "blockTimestamp",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "__gap",
+                "type": "t_array(t_uint256)45_storage",
+                "offset": 0,
+                "slot": "5"
+              }
+            ],
+            "numberOfBytes": "1600"
+          },
+          "t_struct(RequestData)614_storage": {
+            "label": "struct IVerifier.RequestData",
+            "members": [
+              {
+                "label": "metadata",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "validator",
+                "type": "t_contract(IRequestValidator)334",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "params",
+                "type": "t_bytes_storage",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "creator",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "3"
+              }
+            ],
+            "numberOfBytes": "128"
+          },
+          "t_struct(RequestDisableStorage)1514_storage": {
+            "label": "struct RequestDisableable.RequestDisableStorage",
+            "members": [
+              {
+                "label": "_requestDisabling",
+                "type": "t_mapping(t_uint256,t_bool)",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(RequestOwnershipStorage)1571_storage": {
+            "label": "struct RequestOwnership.RequestOwnershipStorage",
+            "members": [
+              {
+                "label": "_requestOwners",
+                "type": "t_mapping(t_uint256,t_address)",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(ValidatorWhitelistStorage)1829_storage": {
+            "label": "struct ValidatorWhitelist.ValidatorWhitelistStorage",
+            "members": [
+              {
+                "label": "_validatorWhitelist",
+                "type": "t_mapping(t_contract(IRequestValidator)334,t_bool)",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(VerifierStorage)2033_storage": {
+            "label": "struct Verifier.VerifierStorage",
+            "members": [
+              {
+                "label": "_proofs",
+                "type": "t_mapping(t_uint256,t_mapping(t_address,t_struct(Proof)2044_storage))",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "_requests",
+                "type": "t_mapping(t_uint256,t_struct(RequestData)614_storage)",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "_requestIds",
+                "type": "t_array(t_uint256)dyn_storage",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "_state",
+                "type": "t_contract(IState)583",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "_groupedRequests",
+                "type": "t_mapping(t_uint256,t_array(t_uint256)dyn_storage)",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "_groupIds",
+                "type": "t_array(t_uint256)dyn_storage",
+                "offset": 0,
+                "slot": "5"
+              },
+              {
+                "label": "_multiRequests",
+                "type": "t_mapping(t_uint256,t_struct(MultiRequest)672_storage)",
+                "offset": 0,
+                "slot": "6"
+              },
+              {
+                "label": "_multiRequestIds",
+                "type": "t_array(t_uint256)dyn_storage",
+                "offset": 0,
+                "slot": "7"
+              },
+              {
+                "label": "_authMethodsNames",
+                "type": "t_array(t_string_storage)dyn_storage",
+                "offset": 0,
+                "slot": "8"
+              },
+              {
+                "label": "_authMethods",
+                "type": "t_mapping(t_string_memory_ptr,t_struct(AuthMethodData)1976_storage)",
+                "offset": 0,
+                "slot": "9"
+              },
+              {
+                "label": "_nullifierSessionIDs",
+                "type": "t_mapping(t_uint256,t_uint256)",
+                "offset": 0,
+                "slot": "10"
+              },
+              {
+                "label": "_verifierID",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "11"
+              }
+            ],
+            "numberOfBytes": "384"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint64": {
+            "label": "uint64",
+            "numberOfBytes": "8"
+          }
+        },
+        "namespaces": {
+          "erc7201:iden3.storage.ValidatorWhitelist": [
+            {
+              "contract": "ValidatorWhitelist",
+              "label": "_validatorWhitelist",
+              "type": "t_mapping(t_contract(IRequestValidator)334,t_bool)",
+              "src": "contracts\\verifiers\\ValidatorWhitelist.sol:15",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:iden3.storage.RequestDisableable": [
+            {
+              "contract": "RequestDisableable",
+              "label": "_requestDisabling",
+              "type": "t_mapping(t_uint256,t_bool)",
+              "src": "contracts\\verifiers\\RequestDisableable.sol:12",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:iden3.storage.RequestOwnership": [
+            {
+              "contract": "RequestOwnership",
+              "label": "_requestOwners",
+              "type": "t_mapping(t_uint256,t_address)",
+              "src": "contracts\\verifiers\\RequestOwnership.sol:10",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:iden3.storage.Verifier": [
+            {
+              "contract": "Verifier",
+              "label": "_proofs",
+              "type": "t_mapping(t_uint256,t_mapping(t_address,t_struct(Proof)2044_storage))",
+              "src": "contracts\\verifiers\\Verifier.sol:67",
+              "offset": 0,
+              "slot": "0"
+            },
+            {
+              "contract": "Verifier",
+              "label": "_requests",
+              "type": "t_mapping(t_uint256,t_struct(RequestData)614_storage)",
+              "src": "contracts\\verifiers\\Verifier.sol:68",
+              "offset": 0,
+              "slot": "1"
+            },
+            {
+              "contract": "Verifier",
+              "label": "_requestIds",
+              "type": "t_array(t_uint256)dyn_storage",
+              "src": "contracts\\verifiers\\Verifier.sol:69",
+              "offset": 0,
+              "slot": "2"
+            },
+            {
+              "contract": "Verifier",
+              "label": "_state",
+              "type": "t_contract(IState)583",
+              "src": "contracts\\verifiers\\Verifier.sol:70",
+              "offset": 0,
+              "slot": "3"
+            },
+            {
+              "contract": "Verifier",
+              "label": "_groupedRequests",
+              "type": "t_mapping(t_uint256,t_array(t_uint256)dyn_storage)",
+              "src": "contracts\\verifiers\\Verifier.sol:71",
+              "offset": 0,
+              "slot": "4"
+            },
+            {
+              "contract": "Verifier",
+              "label": "_groupIds",
+              "type": "t_array(t_uint256)dyn_storage",
+              "src": "contracts\\verifiers\\Verifier.sol:72",
+              "offset": 0,
+              "slot": "5"
+            },
+            {
+              "contract": "Verifier",
+              "label": "_multiRequests",
+              "type": "t_mapping(t_uint256,t_struct(MultiRequest)672_storage)",
+              "src": "contracts\\verifiers\\Verifier.sol:74",
+              "offset": 0,
+              "slot": "6"
+            },
+            {
+              "contract": "Verifier",
+              "label": "_multiRequestIds",
+              "type": "t_array(t_uint256)dyn_storage",
+              "src": "contracts\\verifiers\\Verifier.sol:75",
+              "offset": 0,
+              "slot": "7"
+            },
+            {
+              "contract": "Verifier",
+              "label": "_authMethodsNames",
+              "type": "t_array(t_string_storage)dyn_storage",
+              "src": "contracts\\verifiers\\Verifier.sol:77",
+              "offset": 0,
+              "slot": "8"
+            },
+            {
+              "contract": "Verifier",
+              "label": "_authMethods",
+              "type": "t_mapping(t_string_memory_ptr,t_struct(AuthMethodData)1976_storage)",
+              "src": "contracts\\verifiers\\Verifier.sol:78",
+              "offset": 0,
+              "slot": "9"
+            },
+            {
+              "contract": "Verifier",
+              "label": "_nullifierSessionIDs",
+              "type": "t_mapping(t_uint256,t_uint256)",
+              "src": "contracts\\verifiers\\Verifier.sol:79",
+              "offset": 0,
+              "slot": "10"
+            },
+            {
+              "contract": "Verifier",
+              "label": "_verifierID",
+              "type": "t_uint256",
+              "src": "contracts\\verifiers\\Verifier.sol:81",
+              "offset": 0,
+              "slot": "11"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Ownable2Step": [
+            {
+              "contract": "Ownable2StepUpgradeable",
+              "label": "_pendingOwner",
+              "type": "t_address",
+              "src": "@openzeppelin\\contracts-upgradeable\\access\\Ownable2StepUpgradeable.sol:29",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Ownable": [
+            {
+              "contract": "OwnableUpgradeable",
+              "label": "_owner",
+              "type": "t_address",
+              "src": "@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:24",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Initializable": [
+            {
+              "contract": "Initializable",
+              "label": "_initialized",
+              "type": "t_uint64",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:69",
+              "offset": 0,
+              "slot": "0"
+            },
+            {
+              "contract": "Initializable",
+              "label": "_initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:73",
+              "offset": 8,
+              "slot": "0"
+            }
+          ]
+        }
+      }
+    },
+    "7dbf0b17e48d80bae12b5b9003e5add5d1f780a593a271c38c5377145e9c3b17": {
+      "address": "0x34C59D460EbE0496BEeDEC496A8F07b8B2d5843F",
+      "txHash": "0xbfcd40b14e2cb4dda3da684807c572b0d9f6d3058767bfaaf8bc7dda1d03690b",
+      "layout": {
+        "solcVersion": "0.8.27",
+        "storage": [],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_string_storage)dyn_storage": {
+            "label": "string[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_struct(ProofEntry)2064_storage)dyn_storage": {
+            "label": "struct Verifier.ProofEntry[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_uint256)45_storage": {
+            "label": "uint256[45]",
+            "numberOfBytes": "1440"
+          },
+          "t_array(t_uint256)dyn_storage": {
+            "label": "uint256[]",
+            "numberOfBytes": "32"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_bytes_storage": {
+            "label": "bytes",
+            "numberOfBytes": "32"
+          },
+          "t_contract(IAuthValidator)271": {
+            "label": "contract IAuthValidator",
+            "numberOfBytes": "20"
+          },
+          "t_contract(IRequestValidator)334": {
+            "label": "contract IRequestValidator",
+            "numberOfBytes": "20"
+          },
+          "t_contract(IState)583": {
+            "label": "contract IState",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_address,t_struct(Proof)2044_storage)": {
+            "label": "mapping(address => struct Verifier.Proof)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_contract(IRequestValidator)334,t_bool)": {
+            "label": "mapping(contract IRequestValidator => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_string_memory_ptr,t_struct(AuthMethodData)1976_storage)": {
+            "label": "mapping(string => struct Verifier.AuthMethodData)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_string_memory_ptr,t_uint256)": {
+            "label": "mapping(string => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_address)": {
+            "label": "mapping(uint256 => address)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_array(t_uint256)dyn_storage)": {
+            "label": "mapping(uint256 => uint256[])",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_bool)": {
+            "label": "mapping(uint256 => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_mapping(t_address,t_struct(Proof)2044_storage))": {
+            "label": "mapping(uint256 => mapping(address => struct Verifier.Proof))",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_struct(MultiRequest)672_storage)": {
+            "label": "mapping(uint256 => struct IVerifier.MultiRequest)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_struct(RequestData)614_storage)": {
+            "label": "mapping(uint256 => struct IVerifier.RequestData)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_uint256)": {
+            "label": "mapping(uint256 => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_string_memory_ptr": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_struct(AuthMethodData)1976_storage": {
+            "label": "struct Verifier.AuthMethodData",
+            "members": [
+              {
+                "label": "validator",
+                "type": "t_contract(IAuthValidator)271",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "params",
+                "type": "t_bytes_storage",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "isActive",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "2"
+              }
+            ],
+            "numberOfBytes": "96"
+          },
+          "t_struct(InitializableStorage)146_storage": {
+            "label": "struct Initializable.InitializableStorage",
+            "members": [
+              {
+                "label": "_initialized",
+                "type": "t_uint64",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "_initializing",
+                "type": "t_bool",
+                "offset": 8,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(MultiRequest)672_storage": {
+            "label": "struct IVerifier.MultiRequest",
+            "members": [
+              {
+                "label": "multiRequestId",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "requestIds",
+                "type": "t_array(t_uint256)dyn_storage",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "groupIds",
+                "type": "t_array(t_uint256)dyn_storage",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "metadata",
+                "type": "t_bytes_storage",
+                "offset": 0,
+                "slot": "3"
+              }
+            ],
+            "numberOfBytes": "128"
+          },
+          "t_struct(Ownable2StepStorage)14_storage": {
+            "label": "struct Ownable2StepUpgradeable.Ownable2StepStorage",
+            "members": [
+              {
+                "label": "_pendingOwner",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(OwnableStorage)74_storage": {
+            "label": "struct OwnableUpgradeable.OwnableStorage",
+            "members": [
+              {
+                "label": "_owner",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(Proof)2044_storage": {
+            "label": "struct Verifier.Proof",
+            "members": [
+              {
+                "label": "isVerified",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "proofEntries",
+                "type": "t_array(t_struct(ProofEntry)2064_storage)dyn_storage",
+                "offset": 0,
+                "slot": "1"
+              }
+            ],
+            "numberOfBytes": "64"
+          },
+          "t_struct(ProofEntry)2064_storage": {
+            "label": "struct Verifier.ProofEntry",
+            "members": [
+              {
+                "label": "responseFields",
+                "type": "t_mapping(t_string_memory_ptr,t_uint256)",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "responseFieldNames",
+                "type": "t_array(t_string_storage)dyn_storage",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "responseFieldIndexes",
+                "type": "t_mapping(t_string_memory_ptr,t_uint256)",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "validatorVersion",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "blockTimestamp",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "__gap",
+                "type": "t_array(t_uint256)45_storage",
+                "offset": 0,
+                "slot": "5"
+              }
+            ],
+            "numberOfBytes": "1600"
+          },
+          "t_struct(RequestData)614_storage": {
+            "label": "struct IVerifier.RequestData",
+            "members": [
+              {
+                "label": "metadata",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "validator",
+                "type": "t_contract(IRequestValidator)334",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "params",
+                "type": "t_bytes_storage",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "creator",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "3"
+              }
+            ],
+            "numberOfBytes": "128"
+          },
+          "t_struct(RequestDisableStorage)1514_storage": {
+            "label": "struct RequestDisableable.RequestDisableStorage",
+            "members": [
+              {
+                "label": "_requestDisabling",
+                "type": "t_mapping(t_uint256,t_bool)",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(RequestOwnershipStorage)1571_storage": {
+            "label": "struct RequestOwnership.RequestOwnershipStorage",
+            "members": [
+              {
+                "label": "_requestOwners",
+                "type": "t_mapping(t_uint256,t_address)",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(ValidatorWhitelistStorage)1829_storage": {
+            "label": "struct ValidatorWhitelist.ValidatorWhitelistStorage",
+            "members": [
+              {
+                "label": "_validatorWhitelist",
+                "type": "t_mapping(t_contract(IRequestValidator)334,t_bool)",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(VerifierStorage)2033_storage": {
+            "label": "struct Verifier.VerifierStorage",
+            "members": [
+              {
+                "label": "_proofs",
+                "type": "t_mapping(t_uint256,t_mapping(t_address,t_struct(Proof)2044_storage))",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "_requests",
+                "type": "t_mapping(t_uint256,t_struct(RequestData)614_storage)",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "_requestIds",
+                "type": "t_array(t_uint256)dyn_storage",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "_state",
+                "type": "t_contract(IState)583",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "_groupedRequests",
+                "type": "t_mapping(t_uint256,t_array(t_uint256)dyn_storage)",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "_groupIds",
+                "type": "t_array(t_uint256)dyn_storage",
+                "offset": 0,
+                "slot": "5"
+              },
+              {
+                "label": "_multiRequests",
+                "type": "t_mapping(t_uint256,t_struct(MultiRequest)672_storage)",
+                "offset": 0,
+                "slot": "6"
+              },
+              {
+                "label": "_multiRequestIds",
+                "type": "t_array(t_uint256)dyn_storage",
+                "offset": 0,
+                "slot": "7"
+              },
+              {
+                "label": "_authMethodsNames",
+                "type": "t_array(t_string_storage)dyn_storage",
+                "offset": 0,
+                "slot": "8"
+              },
+              {
+                "label": "_authMethods",
+                "type": "t_mapping(t_string_memory_ptr,t_struct(AuthMethodData)1976_storage)",
+                "offset": 0,
+                "slot": "9"
+              },
+              {
+                "label": "_nullifierSessionIDs",
+                "type": "t_mapping(t_uint256,t_uint256)",
+                "offset": 0,
+                "slot": "10"
+              },
+              {
+                "label": "_verifierID",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "11"
+              }
+            ],
+            "numberOfBytes": "384"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint64": {
+            "label": "uint64",
+            "numberOfBytes": "8"
+          }
+        },
+        "namespaces": {
+          "erc7201:iden3.storage.ValidatorWhitelist": [
+            {
+              "contract": "ValidatorWhitelist",
+              "label": "_validatorWhitelist",
+              "type": "t_mapping(t_contract(IRequestValidator)334,t_bool)",
+              "src": "contracts\\verifiers\\ValidatorWhitelist.sol:15",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:iden3.storage.RequestDisableable": [
+            {
+              "contract": "RequestDisableable",
+              "label": "_requestDisabling",
+              "type": "t_mapping(t_uint256,t_bool)",
+              "src": "contracts\\verifiers\\RequestDisableable.sol:12",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:iden3.storage.RequestOwnership": [
+            {
+              "contract": "RequestOwnership",
+              "label": "_requestOwners",
+              "type": "t_mapping(t_uint256,t_address)",
+              "src": "contracts\\verifiers\\RequestOwnership.sol:10",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:iden3.storage.Verifier": [
+            {
+              "contract": "Verifier",
+              "label": "_proofs",
+              "type": "t_mapping(t_uint256,t_mapping(t_address,t_struct(Proof)2044_storage))",
+              "src": "contracts\\verifiers\\Verifier.sol:67",
+              "offset": 0,
+              "slot": "0"
+            },
+            {
+              "contract": "Verifier",
+              "label": "_requests",
+              "type": "t_mapping(t_uint256,t_struct(RequestData)614_storage)",
+              "src": "contracts\\verifiers\\Verifier.sol:68",
+              "offset": 0,
+              "slot": "1"
+            },
+            {
+              "contract": "Verifier",
+              "label": "_requestIds",
+              "type": "t_array(t_uint256)dyn_storage",
+              "src": "contracts\\verifiers\\Verifier.sol:69",
+              "offset": 0,
+              "slot": "2"
+            },
+            {
+              "contract": "Verifier",
+              "label": "_state",
+              "type": "t_contract(IState)583",
+              "src": "contracts\\verifiers\\Verifier.sol:70",
+              "offset": 0,
+              "slot": "3"
+            },
+            {
+              "contract": "Verifier",
+              "label": "_groupedRequests",
+              "type": "t_mapping(t_uint256,t_array(t_uint256)dyn_storage)",
+              "src": "contracts\\verifiers\\Verifier.sol:71",
+              "offset": 0,
+              "slot": "4"
+            },
+            {
+              "contract": "Verifier",
+              "label": "_groupIds",
+              "type": "t_array(t_uint256)dyn_storage",
+              "src": "contracts\\verifiers\\Verifier.sol:72",
+              "offset": 0,
+              "slot": "5"
+            },
+            {
+              "contract": "Verifier",
+              "label": "_multiRequests",
+              "type": "t_mapping(t_uint256,t_struct(MultiRequest)672_storage)",
+              "src": "contracts\\verifiers\\Verifier.sol:74",
+              "offset": 0,
+              "slot": "6"
+            },
+            {
+              "contract": "Verifier",
+              "label": "_multiRequestIds",
+              "type": "t_array(t_uint256)dyn_storage",
+              "src": "contracts\\verifiers\\Verifier.sol:75",
+              "offset": 0,
+              "slot": "7"
+            },
+            {
+              "contract": "Verifier",
+              "label": "_authMethodsNames",
+              "type": "t_array(t_string_storage)dyn_storage",
+              "src": "contracts\\verifiers\\Verifier.sol:77",
+              "offset": 0,
+              "slot": "8"
+            },
+            {
+              "contract": "Verifier",
+              "label": "_authMethods",
+              "type": "t_mapping(t_string_memory_ptr,t_struct(AuthMethodData)1976_storage)",
+              "src": "contracts\\verifiers\\Verifier.sol:78",
+              "offset": 0,
+              "slot": "9"
+            },
+            {
+              "contract": "Verifier",
+              "label": "_nullifierSessionIDs",
+              "type": "t_mapping(t_uint256,t_uint256)",
+              "src": "contracts\\verifiers\\Verifier.sol:79",
+              "offset": 0,
+              "slot": "10"
+            },
+            {
+              "contract": "Verifier",
+              "label": "_verifierID",
+              "type": "t_uint256",
+              "src": "contracts\\verifiers\\Verifier.sol:81",
+              "offset": 0,
+              "slot": "11"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Ownable2Step": [
+            {
+              "contract": "Ownable2StepUpgradeable",
+              "label": "_pendingOwner",
+              "type": "t_address",
+              "src": "@openzeppelin\\contracts-upgradeable\\access\\Ownable2StepUpgradeable.sol:29",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Ownable": [
+            {
+              "contract": "OwnableUpgradeable",
+              "label": "_owner",
+              "type": "t_address",
+              "src": "@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:24",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Initializable": [
+            {
+              "contract": "Initializable",
+              "label": "_initialized",
+              "type": "t_uint64",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:69",
+              "offset": 0,
+              "slot": "0"
+            },
+            {
+              "contract": "Initializable",
+              "label": "_initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:73",
               "offset": 8,
               "slot": "0"
             }

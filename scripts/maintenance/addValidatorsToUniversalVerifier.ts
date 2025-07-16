@@ -106,7 +106,11 @@ async function main() {
       );
       const addToWhiteListTx = await universalVerifier
         .connect(signer)
-        .addValidatorToWhitelist(v.validatorContractAddress);
+        .addValidatorToWhitelist(v.validatorContractAddress
+          , {
+          gasLimit: 6000000, // Set a higher gas limit
+        }
+        );
       await addToWhiteListTx.wait();
       Logger.success(
         `Validator ${v.validatorContractName} (${v.validatorContractAddress}) whitelisted`,
@@ -138,7 +142,11 @@ async function main() {
         authMethod: v.authMethod,
         validator: v.authValidatorAddress,
         params: "0x",
-      });
+      }
+      , {
+    gasLimit: 6000000 // Recommended starting value
+  }
+    );
       await setAuthMethodTx.wait();
       Logger.success(
         `Auth method ${v.authMethod}: AuthValidator address (${v.authValidatorAddress}) set`,

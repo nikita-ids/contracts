@@ -978,7 +978,12 @@ export class DeployHelper {
     if (!owner) {
       owner = this.signers[0];
     }
-    const verifierLib: Contract = await ethers.deployContract("VerifierLib");
+    const verifierLib: Contract = await ethers.deployContract("VerifierLib",
+      [], {
+            // gasLimit: 16_000_000n,
+            gasLimit: 10000000,
+      }
+    );
     const UniversalVerifierFactory = await ethers.getContractFactory(verifierContractName, {
       signer: owner,
       libraries: {
@@ -1049,7 +1054,8 @@ export class DeployHelper {
 
       const originalEstimateGas = owner.provider?.estimateGas;
       if (owner.provider) {
-        owner.provider.estimateGas = async () => 16234336n;
+        owner.provider.estimateGas = async () => 15000000n;
+        // 16234336n
       }
       try {
         universalVerifier = await upgrades.deployProxy(
@@ -1070,7 +1076,12 @@ export class DeployHelper {
       }
     }
 
-    await universalVerifier.waitForDeployment();
+    await universalVerifier.waitForDeployment(
+      {
+     timeout: 120000, // Increase timeout to 60 seconds
+     pollingInterval: 5000, // Poll every 5 seconds
+   }
+    );
     Logger.success(`${verifierContractName} deployed to: ${await universalVerifier.getAddress()}`);
 
     return { universalVerifier, verifierLib };
