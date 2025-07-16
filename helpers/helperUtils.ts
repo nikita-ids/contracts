@@ -97,6 +97,10 @@ export async function verifyContract(
     libraries: any;
   },
 ): Promise<boolean> {
+  if (!opts) {
+    Logger.warning(`No verification options provided for ${contractAddress}, skipping verification.`);
+    return false;
+  }
   if (hre.network.name === "localhost") {
     return true;
   }

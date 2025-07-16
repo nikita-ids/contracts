@@ -1,0 +1,9 @@
+{
+ "proxyAdminOwnerAddress": "0xEB3A2cD059b7309cc49fFB3B5A44275BB23e39b1",
+ "state": "0x127ABf087d9EfE9b10b44ebAd7f63bDa31473009",
+ "stateLib": "0x1e5E1AD4518cCa1F70f18b14F60911CBB9D632f3",
+ "crossChainProofValidator": "0xB0d881635F18107cD88e8f489756681902e53a69",
+ "network": "bbn-mainnet",
+ "chainId": 8099,
+ "deployStrategy": "basic"
+}

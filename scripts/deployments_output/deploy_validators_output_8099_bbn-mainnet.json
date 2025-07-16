@@ -1,0 +1,37 @@
+{
+ "proxyAdminOwnerAddress": "0xEB3A2cD059b7309cc49fFB3B5A44275BB23e39b1",
+ "validatorsInfo": [
+  {
+   "validatorType": "mtpV2",
+   "validator": "0x66928AA6D0170C130B0a3FD0aae7504C5501EcEB",
+   "groth16verifier": "0x66B245CDDcEa3eeA54F7aF39CC148dDd0821bdA5"
+  },
+  {
+   "validatorType": "sigV2",
+   "validator": "0x0318fa9983Ff415ea0f3da53C0c698542aD3681e",
+   "groth16verifier": "0x779cC137FFCA3D561aEB63C9EDFEbd968F233706"
+  },
+  {
+   "validatorType": "v3",
+   "validator": "0xfbf75B1cdeb44006A32A9e391d4811f0f5E06B8E",
+   "groth16verifier": "0x8DB155620c65B5A3C29C16bDF9d7DAa15A0EDf3e"
+  },
+  {
+   "validatorType": "lmq",
+   "validator": "0x80E3A93f73732905F4068d302F0151CaB0cf52D2",
+   "groth16verifier": "0xB7093aDCE70174ded207D24A363bbfEafB66DB35"
+  },
+  {
+   "validatorType": "authV2",
+   "validator": "0x94E3CCC029535991c23582C537F27D1B836182C2",
+   "groth16verifier": "0x22B59E9F8Fc82ba48eA863645415f15aF36aCEcf"
+  },
+  {
+   "validatorType": "ethIdentity",
+   "validator": "0xcC3d1e4162c215913EcfECaaB3a488dE919b000c"
+  }
+ ],
+ "network": "bbn-mainnet",
+ "chainId": 8099,
+ "deployStrategy": "basic"
+}

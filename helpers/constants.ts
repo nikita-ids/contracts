@@ -22,6 +22,11 @@ export const chainIdInfoMap: Map<number, ChainIdInfo> = new Map()
     idType: "0x0112",
     networkType: "test",
     oracleSigningAddress: ORACLE_SIGNING_ADDRESS_HARDHAT,
+  })
+  .set(8099, {
+    idType: "0x0116",
+    networkType: "main",
+    oracleSigningAddress: ORACLE_SIGNING_ADDRESS_HARDHAT,
   }) // hardhat
   .set(1101, {
     idType: "0x0114",

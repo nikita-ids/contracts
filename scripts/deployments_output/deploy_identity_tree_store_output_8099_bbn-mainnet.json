@@ -1,0 +1,9 @@
+{
+ "proxyAdminOwnerAddress": "0xEB3A2cD059b7309cc49fFB3B5A44275BB23e39b1",
+ "identityTreeStore": "0x3e7A50F2A01b495d3aF992Dd5dEec8a08BA732C0",
+ "poseidon2ContractAddress": "0x72F721D9D5f91353B505207C63B56cF3d9447edB",
+ "poseidon3ContractAddress": "0x5Bc89782d5eBF62663Df7Ce5fb4bc7408926A240",
+ "network": "bbn-mainnet",
+ "chainId": 8099,
+ "deployStrategy": "basic"
+}

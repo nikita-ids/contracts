@@ -248,18 +248,28 @@ export class DeployHelper {
     } else {
       this.log("deploying with BASIC strategy...");
 
-      state = await upgrades.deployProxy(
-        StateFactory,
-        [
-          await groth16VerifierStateTransition.getAddress(),
-          defaultIdType,
-          await owner.getAddress(),
-          await crossChainProofValidator.getAddress(),
-        ],
-        {
-          unsafeAllow: ["external-library-linking"],
-        },
-      );
+      const originalEstimateGas = owner.provider?.estimateGas;
+      if (owner.provider) {
+        owner.provider.estimateGas = async () => 15000000n;
+      }
+      try {
+        state = await upgrades.deployProxy(
+          StateFactory,
+          [
+            await groth16VerifierStateTransition.getAddress(),
+            defaultIdType,
+            await owner.getAddress(),
+            await crossChainProofValidator.getAddress(),
+          ],
+          {
+            unsafeAllow: ["external-library-linking"],
+          },
+        );
+      } finally {
+        if (owner.provider && originalEstimateGas) {
+          owner.provider.estimateGas = originalEstimateGas;
+        }
+      }
     }
 
     await state.waitForDeployment();
@@ -408,7 +418,7 @@ export class DeployHelper {
   }
 
   async deployStateLib(): Promise<Contract> {
-    const stateLib = await ethers.deployContract(contractsInfo.STATE_LIB.name);
+    const stateLib = await ethers.deployContract(contractsInfo.STATE_LIB.name, [], { gasLimit: 10000000 });
     await stateLib.waitForDeployment();
     Logger.success(`StateLib deployed to:  ${await stateLib.getAddress()}`);
 
@@ -489,7 +499,7 @@ export class DeployHelper {
       domainName,
       signatureVersion,
       oracleSigningAddress,
-    ]);
+    ], { gasLimit: 10000000 });
     await crossChainProofValidator.waitForDeployment();
     Logger.success(`${contractName} deployed to: ${await crossChainProofValidator.getAddress()}`);
     return crossChainProofValidator;
@@ -508,7 +518,7 @@ export class DeployHelper {
     if (
       ["Groth16VerifierStateTransition", "Groth16VerifierStub"].includes(g16VerifierContractName)
     ) {
-      g16Verifier = await ethers.deployContract(g16VerifierContractName);
+      g16Verifier = await ethers.deployContract(g16VerifierContractName, [], { gasLimit: 10000000 });
     } else {
       throw new Error("invalid verifierContractName");
     }
@@ -626,9 +636,20 @@ export class DeployHelper {
   async deployGroth16VerifierWrapper(groth16VerifierType: Groth16VerifierType): Promise<Contract> {
     const g16VerifierContractWrapperName = this.getGroth16VerifierWrapperName(groth16VerifierType);
 
-    const groth16VerifierWrapper = await ethers.deployContract(g16VerifierContractWrapperName);
-
-    await groth16VerifierWrapper.waitForDeployment();
+    const owner = this.signers[0];
+    const originalEstimateGas = owner.provider?.estimateGas;
+    if (owner.provider) {
+      owner.provider.estimateGas = async () => 15000000n;
+    }
+    let groth16VerifierWrapper;
+    try {
+      groth16VerifierWrapper = await ethers.deployContract(g16VerifierContractWrapperName);
+      await groth16VerifierWrapper.waitForDeployment();
+    } finally {
+      if (owner.provider && originalEstimateGas) {
+        owner.provider.estimateGas = originalEstimateGas;
+      }
+    }
     Logger.success(
       `${g16VerifierContractWrapperName} Wrapper deployed to: ${await groth16VerifierWrapper.getAddress()}`,
     );
@@ -809,7 +830,18 @@ export class DeployHelper {
     } else {
       this.log("deploying with BASIC strategy...");
 
-      validator = await upgrades.deployProxy(ValidatorFactory, validatorArgs);
+      const owner = this.signers[0];
+      const originalEstimateGas = owner.provider?.estimateGas;
+      if (owner.provider) {
+        owner.provider.estimateGas = async () => 15000000n;
+      }
+      try {
+        validator = await upgrades.deployProxy(ValidatorFactory, validatorArgs);
+      } finally {
+        if (owner.provider && originalEstimateGas) {
+          owner.provider.estimateGas = originalEstimateGas;
+        }
+      }
     }
 
     validator.waitForDeployment();
@@ -1015,17 +1047,27 @@ export class DeployHelper {
     } else {
       this.log("deploying with BASIC strategy...");
 
-      universalVerifier = await upgrades.deployProxy(
-        UniversalVerifierFactory,
-        [stateAddr, await owner.getAddress()],
-        {
-          unsafeAllow: [
-            "external-library-linking",
-            "missing-initializer",
-            "missing-initializer-call",
-          ],
-        },
-      );
+      const originalEstimateGas = owner.provider?.estimateGas;
+      if (owner.provider) {
+        owner.provider.estimateGas = async () => 16234336n;
+      }
+      try {
+        universalVerifier = await upgrades.deployProxy(
+          UniversalVerifierFactory,
+          [stateAddr, await owner.getAddress()],
+          {
+            unsafeAllow: [
+              "external-library-linking",
+              "missing-initializer",
+              "missing-initializer-call",
+            ],
+          },
+        );
+      } finally {
+        if (owner.provider && originalEstimateGas) {
+          owner.provider.estimateGas = originalEstimateGas;
+        }
+      }
     }
 
     await universalVerifier.waitForDeployment();
@@ -1130,13 +1172,24 @@ export class DeployHelper {
     } else {
       this.log("deploying with BASIC strategy...");
 
-      identityTreeStore = await upgrades.deployProxy(
-        IdentityTreeStoreFactory,
-        [stateContractAddress],
-        {
-          unsafeAllow: ["external-library-linking"],
-        },
-      );
+      const owner = this.signers[0];
+      const originalEstimateGas = owner.provider?.estimateGas;
+      if (owner.provider) {
+        owner.provider.estimateGas = async () => 15000000n;
+      }
+      try {
+        identityTreeStore = await upgrades.deployProxy(
+          IdentityTreeStoreFactory,
+          [stateContractAddress],
+          {
+            unsafeAllow: ["external-library-linking"],
+          },
+        );
+      } finally {
+        if (owner.provider && originalEstimateGas) {
+          owner.provider.estimateGas = originalEstimateGas;
+        }
+      }
     }
 
     await identityTreeStore.waitForDeployment();
